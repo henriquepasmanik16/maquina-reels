@@ -6,6 +6,7 @@ const path = require('path');
 
 (async () => {
   const [roteiroPath, out, audio] = process.argv.slice(2);
+  fs.mkdirSync(path.dirname(path.resolve(out)), { recursive: true });
   const roteiro = JSON.parse(fs.readFileSync(roteiroPath, 'utf8'));
   const FPS = 30;
   const total = roteiro.cenas[roteiro.cenas.length - 1].fim;
@@ -21,11 +22,15 @@ const path = require('path');
   if (audio) args.push('-i', audio, '-c:a', 'aac', '-b:a', '192k', '-shortest');
   args.push('-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-preset', 'medium', '-crf', '20', '-movflags', '+faststart', out);
   const ff = spawn('ffmpeg', args, { stdio: ['pipe', 'ignore', 'inherit'] });
+  let ffFalhou = null;
+  ff.on('close', code => { if (code !== 0) ffFalhou = code; });
+  ff.stdin.on('error', () => {});
 
   for (let i = 0; i < frames; i++) {
     await page.evaluate(t => window.render(t), i / FPS);
     const buf = await page.screenshot({ type: 'jpeg', quality: 92 });
-    if (!ff.stdin.write(buf)) await new Promise(r => ff.stdin.once('drain', r));
+    if (ffFalhou !== null) throw new Error('ffmpeg falhou (código ' + ffFalhou + ')');
+    if (!ff.stdin.write(buf)) await new Promise(r => { ff.stdin.once('drain', r); ff.once('close', r); });
     if (i % 150 === 0) console.error(`frame ${i}/${frames}`);
   }
   ff.stdin.end();
