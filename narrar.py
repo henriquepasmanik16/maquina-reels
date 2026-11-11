@@ -3,10 +3,10 @@
 Uso: python3 narrar.py roteiros/X.json saida_dir
 Gera saida_dir/X.mp3 e saida_dir/X.timed.json (roteiro com inicio/fim recalculados).
 """
-import json, os, subprocess, sys
+import json, os, subprocess, sys, time
 
-VOZ = os.environ.get("VOZ", "pt-BR-AntonioNeural")
-RATE = os.environ.get("RATE", "+12%")
+VOZ = os.environ.get("VOZ", "en-US-AndrewMultilingualNeural")
+RATE = os.environ.get("RATE", "+0%")
 MIN_DUR = {"editor": 2.5, "checklist": 5.5, "tabela": 4.5, "agenda": 6.0, "comentario": 3.5}
 GAP = 0.3
 
@@ -27,7 +27,12 @@ def main(roteiro_path, out_dir):
         cmd = ["edge-tts", "--voice", VOZ, f"--rate={RATE}", "--text", c["fala"], "--write-media", mp3]
         if proxy:
             cmd += ["--proxy", proxy]
-        subprocess.run(cmd, check=True, env=env, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        for tentativa in range(5):  # o serviço de voz falha de vez em quando
+            if subprocess.run(cmd, env=env, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode == 0:
+                break
+            time.sleep(2 + tentativa * 2)
+        else:
+            raise RuntimeError(f"narração falhou na cena {i}")
         d = dur(mp3)
         cena_dur = max(d + GAP, MIN_DUR.get(c["visual"]["tipo"], 3.0))
         c["inicio"], c["fim"] = round(t, 3), round(t + cena_dur, 3)
