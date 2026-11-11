@@ -1,0 +1,132 @@
+{
+  "id": "01-claude-posta-por-mim",
+  "titulo": "O Claude posta por mim",
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE",
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 3.2,
+      "fala": "Esse vídeo foi roteirizado pelo Claude enquanto eu dormia.",
+      "destaque": [
+        "Claude",
+        "dormia."
+      ],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude · roteiro-0911.md",
+        "linhas": [
+          "GANCHO",
+          "\"Esse vídeo foi roteirizado pelo Claude enquanto eu dormia.\""
+        ],
+        "hora": "03:00"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 3.2,
+      "fim": 10,
+      "fala": "Postar todo dia cansa. Ideia, roteiro, legenda, horário. A maioria desiste na segunda semana.",
+      "destaque": [
+        "cansa.",
+        "desiste"
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Postar todo dia",
+        "itens": [
+          "Ter a ideia",
+          "Escrever o roteiro",
+          "Gravar e editar",
+          "Legenda e hashtags",
+          "Achar o horário"
+        ],
+        "riscar": true
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 10,
+      "fim": 18,
+      "fala": "Então eu montei um agente que analisa os reels que mais prendem no meu nicho e escreve os meus no mesmo molde.",
+      "destaque": [
+        "agente",
+        "molde."
+      ],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "Reels que mais prendem no nicho",
+        "linhas": [
+          [
+            "Agente que responde direct"
+          ],
+          [
+            "IAs que trabalham por você"
+          ],
+          [
+            "O erro do seu prompt"
+          ],
+          [
+            "Automação sem código"
+          ],
+          [
+            "Rotina com agentes de IA"
+          ]
+        ]
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 18,
+      "fim": 26,
+      "fala": "Ele escreve, gera a narração, monta o vídeo e publica sozinho, todo dia.",
+      "destaque": [
+        "sozinho,"
+      ],
+      "visual": {
+        "tipo": "agenda",
+        "titulo": "Agenda de publicação",
+        "dias": [
+          [
+            "Seg",
+            "08:00"
+          ],
+          [
+            "Ter",
+            "12:30"
+          ],
+          [
+            "Qua",
+            "19:00"
+          ],
+          [
+            "Qui",
+            "08:00"
+          ],
+          [
+            "Sex",
+            "12:30"
+          ],
+          [
+            "Sáb",
+            "19:00"
+          ]
+        ]
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 26,
+      "fim": 30,
+      "fala": "Comenta AGENTE que eu te respondo com o passo a passo.",
+      "destaque": [
+        "AGENTE"
+      ],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE"
+      }
+    }
+  ]
+}

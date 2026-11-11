@@ -1,0 +1,131 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #07080b; font-family: 'Inter', sans-serif; color: #e9ecf2; }
+  #stage { position: absolute; inset: 0; overflow: hidden; }
+  #grid { position: absolute; left: -50%; right: -50%; bottom: -10%; height: 55%; transform-origin: 50% 0;
+    transform: perspective(600px) rotateX(62deg);
+    background-image: linear-gradient(rgba(120,140,255,.16) 2px, transparent 2px), linear-gradient(90deg, rgba(120,140,255,.16) 2px, transparent 2px);
+    background-size: 120px 120px; mask-image: linear-gradient(to bottom, transparent, #000 40%); -webkit-mask-image: linear-gradient(to bottom, transparent, #000 40%); }
+  .glow { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .35; }
+  #brand { position: absolute; top: 90px; left: 0; right: 0; text-align: center; font-size: 30px; letter-spacing: 6px; color: #8a93ad; font-weight: 600; }
+  #bloco { position: absolute; top: 140px; left: 0; right: 0; text-align: center; font-size: 26px; letter-spacing: 4px; color: #d97757; font-weight: 700; text-transform: uppercase; }
+  .card { position: absolute; left: 70px; right: 70px; top: 330px; background: rgba(22,24,32,.92); border: 2px solid rgba(255,255,255,.08);
+    border-radius: 36px; padding: 44px; box-shadow: 0 40px 120px rgba(0,0,0,.6); }
+  .card h2 { font-size: 40px; font-weight: 700; display: flex; align-items: center; gap: 18px; margin-bottom: 30px; }
+  .card h2 .ic { width: 52px; height: 52px; border-radius: 14px; background: linear-gradient(135deg,#d97757,#b35a3d); display: inline-block; }
+  .card h2 .right { margin-left: auto; font-size: 30px; color: #8a93ad; font-weight: 500; }
+  .dots { display: flex; gap: 12px; margin-bottom: 26px; } .dots i { width: 20px; height: 20px; border-radius: 50%; display: block; }
+  .lbl { font-size: 26px; letter-spacing: 3px; color: #8a93ad; font-weight: 700; margin-bottom: 14px; }
+  .mono { font-family: 'JetBrains Mono', monospace; font-size: 40px; line-height: 1.45; color: #f3f4f8; min-height: 240px; }
+  .caret { display: inline-block; width: 18px; height: 44px; background: #d97757; vertical-align: -8px; margin-left: 4px; }
+  .row { display: flex; align-items: center; gap: 22px; padding: 22px 26px; border-radius: 20px; background: rgba(255,255,255,.035); margin-bottom: 14px; font-size: 36px; }
+  .box { width: 46px; height: 46px; border-radius: 12px; border: 3px solid #5b627a; flex: none; display: flex; align-items: center; justify-content: center; font-size: 30px; font-weight: 800; }
+  .strike { position: relative; } .strike::after { content: ''; position: absolute; left: 0; top: 52%; height: 4px; background: #e5484d; width: var(--w, 0%); }
+  .tbl .row { font-size: 31px; gap: 16px; } .tbl .n { flex: 1; } .tbl .v { width: 140px; text-align: right; font-weight: 700; } .tbl .r { width: 90px; text-align: right; color: #8a93ad; }
+  .bar { width: 150px; height: 14px; background: rgba(255,255,255,.08); border-radius: 7px; overflow: hidden; } .bar b { display: block; height: 100%; background: linear-gradient(90deg,#d97757,#f2b38f); }
+  .best { outline: 3px solid #3fb950; }
+  .ag { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .ag .d { background: rgba(255,255,255,.04); border-radius: 22px; padding: 24px; height: 210px; display: flex; flex-direction: column; }
+  .ag .d .h { display: flex; justify-content: space-between; font-size: 30px; font-weight: 700; } .ag .d .h span { color: #8a93ad; font-weight: 500; }
+  .ag .d .th { flex: 1; margin: 16px 0; border-radius: 12px; background: linear-gradient(160deg,#1f2433,#11131a); border: 2px solid rgba(255,255,255,.06); }
+  .ag .d .st { font-size: 24px; color: #3fb950; font-weight: 700; }
+  .btn { margin-top: 34px; text-align: center; font-size: 40px; font-weight: 800; padding: 30px; border-radius: 24px; background: #238636; color: #fff; }
+  .cm .row { font-size: 34px; } .av { width: 64px; height: 64px; border-radius: 50%; flex: none; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 28px; }
+  .kw { background: #fff; color: #0b0c10; font-weight: 800; padding: 4px 16px; border-radius: 10px; }
+  .dm { margin-top: 26px; padding: 28px; border-radius: 24px; background: linear-gradient(135deg,#2a1f5c,#4b2a7a); font-size: 32px; }
+  .dm .files { display: flex; gap: 16px; margin-top: 18px; } .dm .files span { background: rgba(255,255,255,.12); border-radius: 12px; padding: 10px 18px; font-size: 26px; font-weight: 700; }
+  #cap { position: absolute; left: 60px; right: 60px; top: 1330px; text-align: center; font-size: 76px; font-weight: 800; line-height: 1.15; letter-spacing: -1px; }
+  #cap .w { display: inline-block; margin: 0 10px; } #cap .on { color: #fff; } #cap .off { color: rgba(255,255,255,.35); }
+  #cap .hl { color: #0b0c10; background: #f2b38f; padding: 0 14px; border-radius: 14px; }
+  #prog { position: absolute; left: 70px; right: 70px; bottom: 120px; height: 8px; background: rgba(255,255,255,.08); border-radius: 4px; } #prog b { display: block; height: 100%; background: #d97757; border-radius: 4px; }
+</style></head>
+<body><div id="stage">
+  <div class="glow" style="width:700px;height:700px;left:-200px;top:200px;background:#d97757"></div>
+  <div class="glow" style="width:600px;height:600px;right:-200px;top:900px;background:#5b5bd6"></div>
+  <div id="grid"></div>
+  <div id="brand"></div><div id="bloco"></div>
+  <div id="card"></div>
+  <div id="cap"></div>
+  <div id="prog"><b></b></div>
+</div>
+<script>
+const R = window.ROTEIRO;
+const clamp = (x, a=0, b=1) => Math.max(a, Math.min(b, x));
+const ease = x => 1 - Math.pow(1 - clamp(x), 3);
+const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+document.getElementById('brand').textContent = R.handle.toUpperCase();
+const total = R.cenas[R.cenas.length-1].fim;
+
+function cardHTML(v, lt, dur) {
+  const p = lt / dur; // 0..1 inside scene
+  if (v.tipo === 'editor') {
+    const full = v.linhas[1]; const n = Math.floor(full.length * clamp(lt / (dur*0.8)));
+    return `<h2><span class="ic"></span>${esc(v.titulo)}<span class="right">${esc(v.hora)}</span></h2>
+      <div class="dots"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div>
+      <div class="lbl">${esc(v.linhas[0])}</div><div class="mono">${esc(full.slice(0,n))}<span class="caret" style="opacity:${Math.floor(lt*3)%2?0:1}"></span></div>`;
+  }
+  if (v.tipo === 'checklist') {
+    const rows = v.itens.map((it, i) => {
+      const a = ease((lt - i*0.35) / 0.4); const s = clamp((lt - 3.2 - i*0.35) / 0.5);
+      return `<div class="row" style="opacity:${a};transform:translateX(${(1-a)*60}px)"><span class="box" style="border-color:${s>0?'#e5484d':'#5b627a'};color:#e5484d">${s>0.5?'✕':''}</span><span class="strike" style="--w:${s*100}%;opacity:${1-s*0.5}">${esc(it)}</span></div>`;
+    }).join('');
+    return `<h2><span class="ic"></span>${esc(v.titulo)}<span class="right">todo dia</span></h2>${rows}`;
+  }
+  if (v.tipo === 'tabela') {
+    const rows = v.linhas.map((r, i) => {
+      const a = ease((lt - 0.3 - i*0.3) / 0.4); const b = ease((lt - 1.5 - i*0.3) / 1.2);
+      const best = lt > 5 && i === 0;
+      if (r.length === 1) return `<div class="row ${best?'best':''}" style="opacity:${a}"><span class="n">${esc(r[0])}</span><span class="r" style="width:auto;color:${b>0.5?'#3fb950':'#5b627a'}">${b>0.5?'✓ referência':'analisando…'}</span></div>`;
+      return `<div class="row ${best?'best':''}" style="opacity:${a}"><span class="n">${esc(r[0])}</span><span class="v">${esc(r[1])}</span><span class="r">${Math.round(r[2]*b)}%</span><span class="bar"><b style="width:${r[2]*b}%"></b></span></div>`;
+    }).join('');
+    return `<h2><span class="ic" style="background:linear-gradient(135deg,#5b5bd6,#3e63dd)"></span>${esc(v.titulo)}<span class="right">${v.linhas[0].length===1?'nicho':'retenção'}</span></h2><div class="tbl">${rows}</div>`;
+  }
+  if (v.tipo === 'agenda') {
+    const ds = v.dias.map((d, i) => {
+      const a = ease((lt - i*0.25) / 0.4); const ok = lt > 2 + i*0.45;
+      return `<div class="d" style="opacity:${a};transform:scale(${0.9+0.1*a})"><div class="h">${d[0]}<span>${d[1]}</span></div><div class="th"></div><div class="st" style="color:${ok?'#3fb950':'#5b627a'}">${ok?'● agendado':'○ na fila'}</div></div>`;
+    }).join('');
+    const ap = ease((lt - 5.2) / 0.4);
+    return `<h2><span class="ic" style="background:linear-gradient(135deg,#3e63dd,#5b5bd6)"></span>${esc(v.titulo)}<span class="right">esta semana</span></h2><div class="ag">${ds}</div>
+      <div class="btn" style="opacity:${ap};transform:scale(${0.85+0.15*ap})">Publicado ✓</div>`;
+  }
+  if (v.tipo === 'comentario') {
+    const people = [['V','#3fb950','você · agora']];
+    const rows = people.map((pp, i) => { const a = ease((lt - 0.2 - i*0.3)/0.4);
+      return `<div class="row" style="opacity:${a}"><span class="av" style="background:${pp[1]}">${pp[0]}</span><span>${pp[2]}</span><span class="kw" style="margin-left:auto">${esc(v.palavra)}</span></div>`; }).join('');
+    const dm = ease((lt - 1.6)/0.4);
+    return `<h2><span class="ic"></span>${esc(R.handle)}<span class="right">comentários</span></h2>${rows}
+      <div class="dm" style="opacity:${dm};transform:translateY(${(1-dm)*30}px)">Respondido! Confere o comentário<div class="files"><span>passo 1: ideia</span><span>passo 2: roteiro</span><span>passo 3: vídeo</span></div></div>`;
+  }
+  return '';
+}
+
+function captionHTML(c, lt, dur) {
+  const words = c.fala.split(/\s+/);
+  const per = (c.fala_dur || dur) / words.length; const idx = Math.min(words.length-1, Math.floor(lt / per));
+  const chunk = 3; const start = Math.floor(idx / chunk) * chunk;
+  return words.slice(start, start+chunk).map((w, j) => {
+    const k = start + j; const isHl = (c.destaque||[]).includes(w);
+    const cls = k <= idx ? (isHl ? 'hl' : 'on') : 'off';
+    return `<span class="w ${cls}">${esc(w)}</span>`;
+  }).join(' ');
+}
+
+window.render = function (t) {
+  const c = R.cenas.find(s => t >= s.inicio && t < s.fim) || R.cenas[R.cenas.length-1];
+  const dur = c.fim - c.inicio, lt = t - c.inicio;
+  document.getElementById('bloco').textContent = c.bloco;
+  const card = document.getElementById('card');
+  card.className = 'card' + (c.visual.tipo === 'comentario' ? ' cm' : '');
+  const inA = ease(lt / 0.35), outA = ease((c.fim - t) / 0.25);
+  const a = Math.min(inA, c === R.cenas[R.cenas.length-1] ? 1 : outA);
+  card.style.opacity = a; card.style.transform = `translateY(${(1-inA)*80}px) scale(${0.96+0.04*a})`;
+  card.innerHTML = cardHTML(c.visual, lt, dur);
+  document.getElementById('cap').innerHTML = captionHTML(c, lt, dur);
+  document.querySelector('#prog b').style.width = (t/total*100) + '%';
+  document.getElementById('grid').style.backgroundPosition = `0 ${t*60}px`;
+};
+window.render(0);
+</script></body></html>
