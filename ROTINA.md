@@ -4,7 +4,8 @@ Executada por uma tarefa agendada do Claude, seg a sáb. Conta: @henrique.agente
 
 ## Passos
 1. Preparar: `pip install -q edge-tts`. Playwright (Chromium) e ffmpeg já existem no container.
-2. Ler `diretrizes.md`, `publicados.json` e os roteiros em `roteiros/`.
+2. Ler `diretrizes.md`, `publicados.json` e os roteiros em `roteiros/`. Se `publicados.json` já tem um post com a data de hoje (America/Sao_Paulo), pular para o passo 9.
+   Se as ferramentas do Windsor (instagram) não estiverem disponíveis, gerar e subir o vídeo mesmo assim, registrar em `pendentes.md` que faltou o conector e parar.
 3. Escrever um roteiro novo `roteiros/NN-slug.json` no mesmo formato do `01-claude-posta-por-mim.json`:
    - 5 cenas: Gancho, Problema, Virada, Prova, CTA. Tema do nicho agentes de IA / automação com o Claude, diferente dos últimos 10 em `publicados.json`.
    - `visual.tipo` só entre: editor, checklist, tabela (linhas de 1 item, sem números), agenda, comentario.
