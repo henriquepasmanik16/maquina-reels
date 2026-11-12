@@ -1,0 +1,126 @@
+{
+  "id": "04-claude-code-ao-vivo",
+  "titulo": "Veja o Claude Code trabalhando ao vivo",
+  "fonte": "https://github.com/alexeyw/lot-map",
+  "capa": {
+    "texto": "Veja o Claude Code",
+    "destaque": "trabalhando ao vivo"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Agora dá pra ver o Claude Code trabalhando ao vivo, num mapa.",
+      "destaque": [
+        "ao",
+        "vivo,"
+      ],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "lot-map",
+        "linhas": [
+          "AO VIVO",
+          "memória → arquivos → terminal → web"
+        ],
+        "hora": "agora",
+        "icone": "🗺️"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Normalmente você só vê comandos passando, sem saber o que ele está fazendo.",
+      "destaque": [
+        "comandos",
+        "fazendo."
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Sem o mapa",
+        "direita": "hoje",
+        "itens": [
+          "Lista enorme de comandos",
+          "Texto rolando sem parar",
+          "Sem saber a etapa atual"
+        ],
+        "riscar": true,
+        "icone": "😵"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O lot-map é um plugin que acende cada etapa num painel ao lado do chat.",
+      "destaque": [
+        "plugin",
+        "acende"
+      ],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O que acende no mapa",
+        "direita": "ao vivo",
+        "selo": "✓ acende",
+        "linhas": [
+          [
+            "Suas mensagens"
+          ],
+          [
+            "Cada chamada ao modelo"
+          ],
+          [
+            "Arquivos e terminal"
+          ],
+          [
+            "Web e subagentes"
+          ]
+        ],
+        "icone": "💡"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Você instala com um comando de plugin, e o painel abre sozinho na próxima sessão.",
+      "destaque": [
+        "comando",
+        "sozinho"
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Como instalar",
+        "direita": "1 comando",
+        "itens": [
+          "Adiciona o marketplace",
+          "Instala o plugin",
+          "Abre uma nova sessão"
+        ],
+        "riscar": false,
+        "icone": "⚡"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o comando pra instalar.",
+      "destaque": [
+        "AGENTE"
+      ],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": [
+          "comando",
+          "marketplace",
+          "dicas"
+        ]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}

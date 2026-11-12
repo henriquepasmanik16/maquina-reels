@@ -1,0 +1,126 @@
+{
+  "id": "03-slack-com-agentes",
+  "titulo": "Um Slack onde a IA trabalha com o time",
+  "fonte": "https://github.com/agentes-chat/agentes-chat",
+  "capa": {
+    "texto": "Um Slack onde a IA",
+    "destaque": "trabalha com o time"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Imagina um Slack onde os seus agentes de IA trabalham junto com a equipe.",
+      "destaque": [
+        "agentes",
+        "equipe."
+      ],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "#lançamento",
+        "linhas": [
+          "AGENTE DE TESTES",
+          "Tudo passou. Aguardando sua aprovação para o deploy."
+        ],
+        "hora": "agora",
+        "icone": "💬"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Hoje a IA fica numa aba separada, e você copia e cola tudo na mão.",
+      "destaque": [
+        "separada,",
+        "mão."
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "IA numa aba separada",
+        "direita": "hoje",
+        "itens": [
+          "Copiar a conversa",
+          "Colar no chat da IA",
+          "Repassar a resposta pro time"
+        ],
+        "riscar": true,
+        "icone": "😩"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O agentes chat é open source. Os agentes entram nos canais, com função, dono e orçamento.",
+      "destaque": [
+        "open",
+        "source."
+      ],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "agentes.chat",
+        "direita": "open source",
+        "selo": "✓ incluso",
+        "linhas": [
+          [
+            "Agentes como membros do canal"
+          ],
+          [
+            "Claude, ChatGPT, Gemini ou Grok"
+          ],
+          [
+            "Computador e navegador próprios"
+          ],
+          [
+            "Pede aprovação antes de deploy"
+          ]
+        ],
+        "icone": "🤖"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "E você pode rodar no seu próprio servidor, de graça, com as suas chaves.",
+      "destaque": [
+        "servidor,",
+        "graça,"
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Rodar por conta própria",
+        "direita": "self-hosted",
+        "itens": [
+          "Um comando no servidor Linux",
+          "Suas próprias chaves de IA",
+          "Apps web, desktop e celular"
+        ],
+        "riscar": false,
+        "icone": "🖥️"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o nome do projeto e como instalar.",
+      "destaque": [
+        "AGENTE"
+      ],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": [
+          "projeto",
+          "instalação",
+          "dicas"
+        ]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}

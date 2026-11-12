@@ -90,18 +90,20 @@ function cardHTML(v, lt, dur) {
   if (v.tipo === 'checklist') {
     const rows = v.itens.map((it, i) => {
       const a = ease((lt - i*0.35) / 0.4); const s = clamp((lt - 3.2 - i*0.35) / 0.5);
+      if (v.riscar === false) { const ok = clamp((lt - 0.8 - i*0.5) / 0.3);
+        return `<div class="row" style="opacity:${a};transform:translateX(${(1-a)*60}px)"><span class="box" style="border-color:${ok>0?'#3fb950':'#5b627a'};color:#3fb950;background:${ok>0.5?'rgba(63,185,80,.15)':'none'}">${ok>0.5?'✓':''}</span><span>${esc(it)}</span></div>`; }
       return `<div class="row" style="opacity:${a};transform:translateX(${(1-a)*60}px)"><span class="box" style="border-color:${s>0?'#e5484d':'#5b627a'};color:#e5484d">${s>0.5?'✕':''}</span><span class="strike" style="--w:${s*100}%;opacity:${1-s*0.5}">${esc(it)}</span></div>`;
     }).join('');
-    return `<h2><span class="ic"></span>${esc(v.titulo)}<span class="right">todo dia</span></h2>${rows}`;
+    return `<h2><span class="ic"></span>${esc(v.titulo)}<span class="right">${esc(v.direita || 'todo dia')}</span></h2>${rows}`;
   }
   if (v.tipo === 'tabela') {
     const rows = v.linhas.map((r, i) => {
       const a = ease((lt - 0.3 - i*0.3) / 0.4); const b = ease((lt - 1.5 - i*0.3) / 1.2);
       const best = lt > 5 && i === 0;
-      if (r.length === 1) return `<div class="row ${best?'best':''}" style="opacity:${a}"><span class="n">${esc(r[0])}</span><span class="r" style="width:auto;color:${b>0.5?'#3fb950':'#5b627a'}">${b>0.5?'✓ referência':'analisando…'}</span></div>`;
+      if (r.length === 1) return `<div class="row ${best?'best':''}" style="opacity:${a}"><span class="n">${esc(r[0])}</span><span class="r" style="width:auto;color:${b>0.5?'#3fb950':'#5b627a'}">${b>0.5?esc(v.selo||'✓ referência'):'analisando…'}</span></div>`;
       return `<div class="row ${best?'best':''}" style="opacity:${a}"><span class="n">${esc(r[0])}</span><span class="v">${esc(r[1])}</span><span class="r">${Math.round(r[2]*b)}%</span><span class="bar"><b style="width:${r[2]*b}%"></b></span></div>`;
     }).join('');
-    return `<h2><span class="ic" style="background:linear-gradient(135deg,#5b5bd6,#3e63dd)"></span>${esc(v.titulo)}<span class="right">${v.linhas[0].length===1?'nicho':'retenção'}</span></h2><div class="tbl">${rows}</div>`;
+    return `<h2><span class="ic" style="background:linear-gradient(135deg,#5b5bd6,#3e63dd)"></span>${esc(v.titulo)}<span class="right">${esc(v.direita || (v.linhas[0].length===1?'nicho':'retenção'))}</span></h2><div class="tbl">${rows}</div>`;
   }
   if (v.tipo === 'agenda') {
     const ds = v.dias.map((d, i) => {
@@ -118,7 +120,7 @@ function cardHTML(v, lt, dur) {
       return `<div class="row" style="opacity:${a}"><span class="av" style="background:${pp[1]}">${pp[0]}</span><span>${pp[2]}</span><span class="kw" style="margin-left:auto">${esc(v.palavra)}</span></div>`; }).join('');
     const dm = ease((lt - 1.6)/0.4);
     return `<h2><span class="ic"></span>${esc(R.handle)}<span class="right">comentários</span></h2>${rows}
-      <div class="dm" style="opacity:${dm};transform:translateY(${(1-dm)*30}px)">Respondido! Confere o comentário<div class="files"><span>passo 1: ideia</span><span>passo 2: roteiro</span><span>passo 3: vídeo</span></div></div>`;
+      <div class="dm" style="opacity:${dm};transform:translateY(${(1-dm)*30}px)">Respondido! Confere o comentário<div class="files">${(v.itens||['passo 1: ideia','passo 2: roteiro','passo 3: vídeo']).map(x=>`<span>${esc(x)}</span>`).join('')}</div></div>`;
   }
   return '';
 }

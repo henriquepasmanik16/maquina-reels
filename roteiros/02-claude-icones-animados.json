@@ -1,0 +1,125 @@
+{
+  "id": "02-claude-icones-animados",
+  "titulo": "O Claude desenha ícones animados",
+  "fonte": "https://github.com/kubai087/kubai-icons",
+  "capa": {
+    "texto": "O Claude agora desenha",
+    "destaque": "ícones animados"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude agora desenha ícones animados pro seu site, de graça.",
+      "destaque": [
+        "animados",
+        "graça."
+      ],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude Code · skills",
+        "linhas": [
+          "SKILL INSTALADA",
+          "kubai-icons: pronta para usar"
+        ],
+        "hora": "grátis",
+        "icone": "✏️"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Ícone bonito e animado custa caro, leva horas, e cada um sai de um jeito.",
+      "destaque": [
+        "caro,",
+        "horas,"
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Ícones do seu produto",
+        "direita": "hoje",
+        "itens": [
+          "Pagar pacote de ícones",
+          "Horas no programa de design",
+          "Estilos que não combinam"
+        ],
+        "riscar": true,
+        "icone": "😩"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "A skill Kubai Icons ensina o Claude a desenhar todos no mesmo estilo.",
+      "destaque": [
+        "Kubai",
+        "estilo."
+      ],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "Kubai Icons",
+        "direita": "open source",
+        "selo": "✓ incluso",
+        "linhas": [
+          [
+            "Skill para Claude Code e Codex"
+          ],
+          [
+            "Mais de 2.800 ícones prontos"
+          ],
+          [
+            "React, Vue e SVG"
+          ],
+          [
+            "Licença MIT, uso livre"
+          ]
+        ],
+        "icone": "🎨"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Você instala, pede os ícones do seu produto e ele entrega tudo animado.",
+      "destaque": [
+        "animado."
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Como usar",
+        "direita": "3 passos",
+        "itens": [
+          "Instala a skill",
+          "Reinicia o agente",
+          "Pede os ícones do produto"
+        ],
+        "riscar": false,
+        "icone": "⚡"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o comando de instalação.",
+      "destaque": [
+        "AGENTE"
+      ],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": [
+          "nome da skill",
+          "comando",
+          "site dos ícones"
+        ]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
