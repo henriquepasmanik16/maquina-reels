@@ -2,8 +2,9 @@
 
 Executada por duas tarefas agendadas do Claude, seg a sáb: manhã (09:13) e tarde (15:47), horário de Brasília. Conta: @henrique.agentes (Windsor, conector `instagram`, conta 17841467096525385). O Henrique autorizou publicar sem aprovação **desde que o vídeo passe em `diretrizes.md`**.
 
-## Modo revisão
-Se existir o arquivo `MODO_REVISAO` na raiz do repo: fazer os passos 1 a 6 (gerar, conferir, commit e push do vídeo), NÃO publicar, acrescentar em `pendentes.md` a linha "AGUARDANDO APROVAÇÃO: videos/NN-slug.mp4 (tema)" e pular para o passo 9. O Henrique está avaliando os vídeos antes de liberar a publicação automática.
+## Fila de vídeos prontos
+Antes de gerar um vídeo novo (passos 3 a 6), olhar `pendentes.md`: se houver linha "PRONTO PARA PUBLICAR" (vídeos já gerados e conferidos), publicar o mais antigo dela (passos 7 e 8, legenda baseada no roteiro) e trocar a linha para "PUBLICADO". Só gerar vídeo novo quando a fila estiver vazia.
+(O modo revisão foi desligado em 2026-11-12: o Henrique liberou publicar todo dia sem perguntar. Se voltar a existir o arquivo `MODO_REVISAO`, gerar sem publicar.)
 
 ## Passos
 1. Preparar: `pip install -q edge-tts`. Playwright (Chromium) e ffmpeg já existem no container.
@@ -27,3 +28,4 @@ Se existir o arquivo `MODO_REVISAO` na raiz do repo: fazer os passos 1 a 6 (gera
 7. Publicar com `create_video_post`: `video_url` = `https://raw.githubusercontent.com/henriquepasmanik16/maquina-reels/main/videos/NN-slug.mp4`, legenda de 1 a 3 frases + CTA + "Vídeo e narração gerados com IA." + 3 a 5 hashtags.
 8. Acrescentar a entrada em `publicados.json` (data, id, tema, media_id), commit e push.
 9. Comentários: ler os comentários dos posts dos últimos 7 dias. Para cada comentário com "AGENTE" ainda sem resposta da conta, responder com `reply_to_comment` com o passo a passo prometido no CTA daquele post (curto, até ~600 caracteres, sem link). Não responder duas vezes ao mesmo comentário.
+10. Seguidores: na rotina da tarde, ler `followers_count` (Windsor `get_data`, conector instagram, conta 17841467096525385, campos date, followers_count) e acrescentar uma linha em `seguidores.csv` (data, seguidores, total de reels publicados até hoje). Uma linha por dia; se a data já existe, atualizar. Commit e push.

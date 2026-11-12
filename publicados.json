@@ -1,3 +1,15 @@
 [
-  {"data": "2026-11-11", "id": "01-claude-posta-por-mim", "tema": "O Claude roteiriza, narra e publica meus reels", "media_id": "17957034828290472"}
+  {
+    "data": "2026-11-11",
+    "id": "01-claude-posta-por-mim",
+    "tema": "O Claude roteiriza, narra e publica meus reels",
+    "media_id": "17957034828290472"
+  },
+  {
+    "data": "2026-11-12",
+    "hora": "19:23",
+    "id": "02-claude-icones-animados",
+    "tema": "Skill Kubai Icons: o Claude desenha ícones animados",
+    "media_id": "17919113628524782"
+  }
 ]
