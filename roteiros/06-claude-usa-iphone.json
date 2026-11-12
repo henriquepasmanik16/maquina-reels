@@ -1,0 +1,84 @@
+{
+  "id": "06-claude-usa-iphone",
+  "titulo": "O Claude agora usa o seu iPhone de verdade",
+  "fonte": "https://github.com/JosssphZhou/poki",
+  "capa": {
+    "texto": "O Claude agora mexe",
+    "destaque": "no seu iPhone"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude agora abre apps e toca na tela do seu iPhone, igual você faria.",
+      "destaque": ["iPhone,", "tela"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "pedido.txt",
+        "linhas": ["abre o Chrome no iPhone", "pesquisa e resume pra mim"],
+        "hora": "agora",
+        "icone": "📱"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Até hoje, agente de IA ficava preso no computador. O celular, onde tudo acontece, ficava de fora.",
+      "destaque": ["computador.", "celular,"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Antes",
+        "direita": "limitado",
+        "itens": ["Agente só no computador", "Celular na sua mão", "Tarefa feita no dedo"],
+        "riscar": true,
+        "icone": "🔒"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Poki é um projeto aberto no GitHub que liga o Claude Code ao iPhone real, sem jailbreak.",
+      "destaque": ["Poki", "jailbreak."],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O que o Poki faz",
+        "direita": "código aberto",
+        "selo": "✓ MCP",
+        "linhas": [["Vê a tela do iPhone"], ["Toca e digita"], ["Abre qualquer app"], ["Funciona no Claude Code"]],
+        "icone": "🤖"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Você conecta o iPhone no Mac pelo cabo, pede a tarefa, e ele executa no aparelho.",
+      "destaque": ["Mac", "executa"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Como funciona",
+        "direita": "no Mac",
+        "itens": ["iPhone no cabo USB", "Pede a tarefa", "Ele faz no celular"],
+        "riscar": false,
+        "icone": "✅"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "primeira tarefa", "cuidados"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}

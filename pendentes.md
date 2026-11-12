@@ -1,1 +1,2 @@
 - AGUARDANDO APROVAÇÃO: videos/05-claude-faz-filmes.mp4 (O Claude agora faz filmes inteiros com código: skill cinecode, github.com/sarpstar/cinecode) — gerado 2026-11-12 manhã
+- AGUARDANDO APROVAÇÃO: videos/06-claude-usa-iphone.mp4 (O Claude agora mexe no seu iPhone: Poki, github.com/JosssphZhou/poki) — gerado 2026-11-12 tarde
