@@ -2,6 +2,9 @@
 
 Executada por duas tarefas agendadas do Claude, seg a sáb: manhã (09:13) e tarde (15:47), horário de Brasília. Conta: @henrique.agentes (Windsor, conector `instagram`, conta 17841467096525385). O Henrique autorizou publicar sem aprovação **desde que o vídeo passe em `diretrizes.md`**.
 
+## Modo revisão
+Se existir o arquivo `MODO_REVISAO` na raiz do repo: fazer os passos 1 a 6 (gerar, conferir, commit e push do vídeo), NÃO publicar, acrescentar em `pendentes.md` a linha "AGUARDANDO APROVAÇÃO: videos/NN-slug.mp4 (tema)" e pular para o passo 9. O Henrique está avaliando os vídeos antes de liberar a publicação automática.
+
 ## Passos
 1. Preparar: `pip install -q edge-tts`. Playwright (Chromium) e ffmpeg já existem no container.
 2. Ler `diretrizes.md`, `publicados.json` e os roteiros em `roteiros/`. São dois reels por dia (manhã e tarde). Se `publicados.json` já tem 2 posts com a data de hoje (America/Sao_Paulo), ou um post há menos de 5 horas, pular para o passo 9. Registre também a hora (`hora`, HH:MM) em cada entrada nova.
