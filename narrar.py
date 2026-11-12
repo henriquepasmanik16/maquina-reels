@@ -13,6 +13,13 @@ ELEVEN_MODELO = os.environ.get("ELEVEN_MODELO", "eleven_multilingual_v2")
 RATE = os.environ.get("RATE", "+0%")
 MIN_DUR = {"editor": 2.5, "checklist": 5.5, "tabela": 4.5, "agenda": 6.0, "comentario": 3.5}
 GAP = 0.3
+LIMPEZA = os.environ.get("LIMPEZA", ",".join([
+    "highpass=f=80", "lowpass=f=14000",
+    "afftdn=nr=12:nf=-35:tn=1",
+    "equalizer=f=250:t=q:w=1.2:g=-3", "equalizer=f=4500:t=q:w=1.5:g=2",
+    "acompressor=threshold=-20dB:ratio=3:attack=10:release=120:makeup=2",
+    "loudnorm=I=-14:TP=-1.5:LRA=7",
+]))
 
 
 def dur(path):
@@ -28,7 +35,7 @@ def eleven(texto, destino):
     import urllib.request
     url = f"https://api.elevenlabs.io/v1/text-to-speech/{ELEVEN_VOZ}?output_format=mp3_44100_128"
     corpo = json.dumps({"text": texto, "model_id": ELEVEN_MODELO,
-                        "voice_settings": {"stability": 0.45, "similarity_boost": 0.85, "style": 0.2}}).encode()
+                        "voice_settings": {"stability": 0.5, "similarity_boost": 0.8, "style": 0.15, "use_speaker_boost": True}}).encode()
     headers = {"Content-Type": "application/json", "Accept": "audio/mpeg"}
     if os.environ.get("ELEVENLABS_API_KEY"):
         headers["xi-api-key"] = os.environ["ELEVENLABS_API_KEY"]
@@ -84,7 +91,9 @@ def main(roteiro_path, out_dir):
     filt = "".join(f"[{i}]adelay={int(st*1000)}|{int(st*1000)}[a{i}];" for i, (_, st) in enumerate(parts))
     filt += "".join(f"[a{i}]" for i in range(len(parts))) + f"amix=inputs={len(parts)}:normalize=0,apad,atrim=0:{total}[out]"
     audio = os.path.join(out_dir, f"{r['id']}.mp3")
-    subprocess.run(args + ["-filter_complex", filt, "-map", "[out]", audio], check=True)
+    # "microfone limpo": tira ronco e chiado, controla o grave embolado, dá presença e nivela o volume
+    filt = filt.replace("[out]", "[mix]") + ";[mix]" + LIMPEZA + "[out]"
+    subprocess.run(args + ["-filter_complex", filt, "-map", "[out]", "-ar", "44100", audio], check=True)
     for mp3, _ in parts:
         os.remove(mp3)
     timed = os.path.join(out_dir, f"{r['id']}.timed.json")
