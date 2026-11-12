@@ -1,0 +1,84 @@
+{
+  "id": "05-claude-faz-filmes",
+  "titulo": "O Claude agora faz filmes inteiros com código",
+  "fonte": "https://github.com/sarpstar/cinecode",
+  "capa": {
+    "texto": "O Claude agora faz",
+    "destaque": "filmes com código"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude agora faz um filme inteiro pra você, só com código.",
+      "destaque": ["filme", "código."],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "film.html",
+        "linhas": ["cena 1 → cena 2 → cena 3", "render → filme.mp4"],
+        "hora": "agora",
+        "icone": "🎬"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Fazer vídeo animado sempre pediu programa de edição, horas na timeline e muita paciência.",
+      "destaque": ["edição,", "paciência."],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Do jeito antigo",
+        "direita": "hoje",
+        "itens": ["Programa de edição", "Horas na timeline", "Trilha e som à parte"],
+        "riscar": true,
+        "icone": "😩"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O cinecode é uma skill gratuita pro Claude Code: ele escreve o roteiro, monta cada cena e cria o som.",
+      "destaque": ["cinecode", "gratuita"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O que o Claude faz",
+        "direita": "sozinho",
+        "selo": "✓ feito",
+        "linhas": [["Escreve o roteiro"], ["Monta cada cena"], ["Desenha o som"], ["Entrega o MP4"]],
+        "icone": "🤖"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "E antes de renderizar, ele te mostra o plano e as primeiras cenas pra você aprovar.",
+      "destaque": ["plano", "aprovar."],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Você aprova",
+        "direita": "no controle",
+        "itens": ["Conta a ideia", "Aprova o plano", "Recebe o filme pronto"],
+        "riscar": false,
+        "icone": "✅"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando como instalar a skill.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "primeiro filme", "dicas"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}

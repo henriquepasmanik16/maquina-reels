@@ -1,0 +1,1 @@
+- AGUARDANDO APROVAÇÃO: videos/05-claude-faz-filmes.mp4 (O Claude agora faz filmes inteiros com código: skill cinecode, github.com/sarpstar/cinecode) — gerado 2026-11-12 manhã
