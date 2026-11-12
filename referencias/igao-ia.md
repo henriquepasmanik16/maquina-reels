@@ -24,3 +24,19 @@ Uso: inspiração de TEMA e de ESTILO de gancho. Nunca copiar frase, título ou 
 14. O Andromeda (Meta) decide quem vê o seu anúncio: "10 ideias, não 10 cópias" (15,9 mil)
 15. Reels animados com o Claude do zero em "5 passos" (16,1 mil)
 (próxima fileira, parcial: Troque o GitHub na URL e copie qualquer...; 6 projetos grátis do GitHub pra...; Sua máquina de Reels automáticos; O Claude destruiu o YouTube; Reduza o gasto com APIs pagas)
+21. O Claude virou "artista 3D" no Blender (71,4 mil)
+22. O Claude agora clona qualquer "aplicativo" sem assinatura (102 mil)  ← top
+23. O Claude agora cria sites "premium" sem cara de IA (22,1 mil)
+24. Essa skill do Claude cria "Reels" infinitos sem gastar crédito (120 mil)  ← top
+25. O Claude agora cuida do seu canal do YouTube de graça (62,4 mil)
+26. Como o Claude "me fez viralizar" em 1 semana (34,5 mil)
+27. Fiz engenharia reversa do "TikTok" e olha o que eu achei (11,8 mil)
+28. 3 repositórios que "explodiram" no GitHub (23,1 mil)
+29. Como se faz um "arranha-céu" peça por peça (8.831) — fora do nicho, flopou
+30. Como se faz um "muro de arrimo" que não cai (24,6 mil) — fora do nicho
+
+## Padrões que mais funcionam (por views)
+- "O Claude agora faz X [de graça / sem assinatura / sem crédito]" → 60 a 120 mil.
+- Modelo/ferramenta surpreendente com número concreto real (8 GB de RAM) → 90 mil.
+- Economia (tokens, API) → 20 a 40 mil.
+- Temas fora de IA (construção, autoajuda) rendem menos: evitar.
