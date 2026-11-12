@@ -10,7 +10,7 @@ Henrique autorizou (09/11/2026) a máquina a gerar e publicar reels sem aprovaç
 - Legenda animada palavra por palavra; palavras-chave destacadas.
 - CTA único: "Comenta AGENTE que eu te mando ...".
 - Legenda do post: 1 a 3 frases + CTA + 3 a 5 hashtags (#claude #agentesdeia #automacao ...).
-- Frequência: 1 por dia, seg a sáb, alternando 08:00, 12:30 e 19:00 (America/Sao_Paulo).
+- Frequência: 2 por dia, seg a sáb, um de manhã (~09:15) e um à tarde (~15:45), America/Sao_Paulo. Os dois do mesmo dia têm temas diferentes.
 
 ## Regras de honestidade (obrigatórias)
 - Nenhum número inventado. Views, retenção, horas economizadas ou vendas só aparecem se vierem de dado real (pesquisa feita ou métrica da conta). Sem dado, o card mostra o tema sem número.
