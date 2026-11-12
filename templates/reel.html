@@ -9,9 +9,9 @@
     background-image: linear-gradient(rgba(120,140,255,.16) 2px, transparent 2px), linear-gradient(90deg, rgba(120,140,255,.16) 2px, transparent 2px);
     background-size: 120px 120px; mask-image: linear-gradient(to bottom, transparent, #000 40%); -webkit-mask-image: linear-gradient(to bottom, transparent, #000 40%); }
   .glow { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .35; }
-  #brand { position: absolute; top: 90px; left: 0; right: 0; text-align: center; font-size: 30px; letter-spacing: 6px; color: #8a93ad; font-weight: 600; }
-  #bloco { position: absolute; top: 140px; left: 0; right: 0; text-align: center; font-size: 26px; letter-spacing: 4px; color: #d97757; font-weight: 700; text-transform: uppercase; }
-  .card { position: absolute; left: 70px; right: 70px; top: 330px; background: rgba(22,24,32,.92); border: 2px solid rgba(255,255,255,.08);
+  #brand { position: absolute; top: 70px; left: 0; right: 0; text-align: center; font-size: 30px; letter-spacing: 6px; color: #8a93ad; font-weight: 600; }
+  #bloco { position: absolute; top: 705px; left: 0; right: 0; text-align: center; font-size: 26px; letter-spacing: 4px; color: #d97757; font-weight: 700; text-transform: uppercase; }
+  .card { position: absolute; left: 90px; right: 90px; top: 0; background: rgba(22,24,32,.92); border: 2px solid rgba(255,255,255,.08);
     border-radius: 36px; padding: 44px; box-shadow: 0 40px 120px rgba(0,0,0,.6); }
   .card h2 { font-size: 40px; font-weight: 700; display: flex; align-items: center; gap: 18px; margin-bottom: 30px; }
   .card h2 .ic { width: 52px; height: 52px; border-radius: 14px; background: linear-gradient(135deg,#d97757,#b35a3d); display: inline-block; }
@@ -36,17 +36,32 @@
   .kw { background: #fff; color: #0b0c10; font-weight: 800; padding: 4px 16px; border-radius: 10px; }
   .dm { margin-top: 26px; padding: 28px; border-radius: 24px; background: linear-gradient(135deg,#2a1f5c,#4b2a7a); font-size: 32px; }
   .dm .files { display: flex; gap: 16px; margin-top: 18px; } .dm .files span { background: rgba(255,255,255,.12); border-radius: 12px; padding: 10px 18px; font-size: 26px; font-weight: 700; }
-  #cap { position: absolute; left: 60px; right: 60px; top: 1330px; text-align: center; font-size: 76px; font-weight: 800; line-height: 1.15; letter-spacing: -1px; }
+  #cap { position: absolute; left: 60px; right: 60px; top: 1500px; text-align: center; font-size: 76px; font-weight: 800; line-height: 1.15; letter-spacing: -1px; }
   #cap .w { display: inline-block; margin: 0 10px; } #cap .on { color: #fff; } #cap .off { color: rgba(255,255,255,.35); }
   #cap .hl { color: #0b0c10; background: #f2b38f; padding: 0 14px; border-radius: 14px; }
   #prog { position: absolute; left: 70px; right: 70px; bottom: 120px; height: 8px; background: rgba(255,255,255,.08); border-radius: 4px; } #prog b { display: block; height: 100%; background: #d97757; border-radius: 4px; }
+
+  /* identidade própria: manchete com palavra em pílula laranja + objeto 3D */
+  #capa { position: absolute; top: 140px; left: 70px; right: 70px; text-align: center; font-family: 'Inter Display', 'Inter', sans-serif; font-weight: 800; font-size: 74px; line-height: 1.12; letter-spacing: -2px; color: #fff; }
+  #capa .pill { display: inline-block; margin-top: 14px; padding: 6px 30px 12px; border-radius: 999px; color: #160b06;
+    background: linear-gradient(180deg,#ffb38a,#e8683a); box-shadow: 0 10px 0 #9c3f1d, 0 24px 60px rgba(232,104,58,.45); transform: rotate(-2deg); }
+  #scene3d { position: absolute; left: 0; right: 0; top: 760px; height: 760px; perspective: 1600px; }
+  #tilt { position: absolute; inset: 0; transform-style: preserve-3d; }
+  #tilt .card { transform-style: preserve-3d; box-shadow: 0 2px 0 rgba(255,255,255,.06) inset, 0 18px 0 #14100e, 0 60px 140px rgba(0,0,0,.75), 0 0 80px rgba(217,119,87,.18);
+    background: linear-gradient(165deg, rgba(38,32,30,.97), rgba(18,16,17,.97)); }
+  #tile { position: absolute; left: 50%; top: 465px; width: 190px; height: 190px; margin-left: -95px; border-radius: 52px; z-index: 5;
+    display: flex; align-items: center; justify-content: center; font-size: 104px; font-family: 'Noto Color Emoji';
+    background: radial-gradient(120% 90% at 30% 15%, #ffd2b8 0%, #f08a5d 35%, #b8462a 80%);
+    box-shadow: inset 0 6px 10px rgba(255,255,255,.55), inset 0 -14px 24px rgba(80,20,5,.55), 0 22px 0 #7a2c14, 0 50px 90px rgba(232,104,58,.5); }
+  #tile::after { content: ''; position: absolute; left: 14%; right: 14%; top: 7%; height: 32%; border-radius: 40px; background: linear-gradient(180deg, rgba(255,255,255,.55), rgba(255,255,255,0)); }
 </style></head>
 <body><div id="stage">
   <div class="glow" style="width:700px;height:700px;left:-200px;top:200px;background:#d97757"></div>
   <div class="glow" style="width:600px;height:600px;right:-200px;top:900px;background:#5b5bd6"></div>
   <div id="grid"></div>
-  <div id="brand"></div><div id="bloco"></div>
-  <div id="card"></div>
+  <div id="brand"></div><div id="capa"></div><div id="bloco"></div>
+  <div id="tile"></div>
+  <div id="scene3d"><div id="tilt"><div id="card"></div></div></div>
   <div id="cap"></div>
   <div id="prog"><b></b></div>
 </div>
@@ -57,6 +72,12 @@ const ease = x => 1 - Math.pow(1 - clamp(x), 3);
 const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 document.getElementById('brand').textContent = R.handle.toUpperCase();
 const total = R.cenas[R.cenas.length-1].fim;
+const capa = R.capa || { texto: R.titulo, destaque: '' };
+(function () {
+  const t = esc(capa.texto), d = esc(capa.destaque || '');
+  document.getElementById('capa').innerHTML = d ? `${t}<br><span class="pill">${d}</span>` : t;
+})();
+const ICONE = { editor: '✍️', checklist: '📋', tabela: '📊', agenda: '📅', comentario: '💬' };
 
 function cardHTML(v, lt, dur) {
   const p = lt / dur; // 0..1 inside scene
@@ -121,7 +142,15 @@ window.render = function (t) {
   card.className = 'card' + (c.visual.tipo === 'comentario' ? ' cm' : '');
   const inA = ease(lt / 0.35), outA = ease((c.fim - t) / 0.25);
   const a = Math.min(inA, c === R.cenas[R.cenas.length-1] ? 1 : outA);
-  card.style.opacity = a; card.style.transform = `translateY(${(1-inA)*80}px) scale(${0.96+0.04*a})`;
+  card.style.opacity = a;
+  const sway = Math.sin(t * 0.9) * 7, nod = 16 - 4 * Math.sin(t * 0.6);
+  document.getElementById('tilt').style.transform = `rotateX(${nod}deg) rotateY(${sway}deg) translateZ(${-(1-inA)*220}px)`;
+  card.style.transform = `translateY(${(1-inA)*60}px)`;
+  const tile = document.getElementById('tile');
+  tile.textContent = c.visual.icone || ICONE[c.visual.tipo] || '⚡';
+  const pop = ease(lt / 0.45);
+  tile.style.opacity = a;
+  tile.style.transform = `translateY(${Math.sin(t*2)*12 - (1-pop)*40}px) rotate(${Math.sin(t*1.3)*6}deg) scale(${0.6+0.4*pop})`;
   card.innerHTML = cardHTML(c.visual, lt, dur);
   document.getElementById('cap').innerHTML = captionHTML(c, lt, dur);
   document.querySelector('#prog b').style.width = (t/total*100) + '%';

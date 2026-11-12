@@ -128,5 +128,9 @@
         "palavra": "AGENTE"
       }
     }
-  ]
+  ],
+  "capa": {
+    "texto": "O Claude posta no meu Instagram",
+    "destaque": "enquanto eu durmo"
+  }
 }

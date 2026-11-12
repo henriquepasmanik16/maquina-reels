@@ -6,6 +6,7 @@ Henrique autorizou (09/11/2026) a máquina a gerar e publicar reels sem aprovaç
 - Vertical 1080x1920, 20 a 35 segundos.
 - Molde: Gancho (0-3s) → Problema → Virada → Prova → CTA.
 - Gancho em uma frase, sem apresentação ("Oi, eu sou..."), com resultado ou dor.
+- Visual próprio: manchete fixa no topo com a palavra-chave numa pílula laranja, bloco 3D com ícone e cartão inclinado em perspectiva. Inspirado no estilo 3D do nicho, mas com identidade do @henrique.agentes (laranja, pílula, cartões), sem copiar capas de ninguém.
 - Prova visual em tela (card de ferramenta, antes e depois, agenda, conversa).
 - Legenda animada palavra por palavra; palavras-chave destacadas.
 - CTA único: "Comenta AGENTE que eu te mando ...".
