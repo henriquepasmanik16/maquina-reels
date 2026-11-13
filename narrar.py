@@ -13,11 +13,11 @@ ELEVEN_MODELO = os.environ.get("ELEVEN_MODELO", "eleven_multilingual_v2")
 RATE = os.environ.get("RATE", "+0%")
 MIN_DUR = {"editor": 2.5, "checklist": 5.5, "tabela": 4.5, "agenda": 6.0, "comentario": 3.5}
 GAP = 0.3
-# Voz firme: mais estável, sem exagero de entonação, ritmo um pouco mais decidido e tom levemente mais grave.
-ESTAB = float(os.environ.get("ESTAB", "0.72"))
-ESTILO = float(os.environ.get("ESTILO", "0.0"))
-VELOC = float(os.environ.get("VELOC", "1.06"))
-TOM = float(os.environ.get("TOM", "-1.5"))  # semitons
+# Voz: mesma entonação e timbre do clone; só a cadência um pouco mais rápida e decidida (pedido do Henrique 13/11).
+ESTAB = float(os.environ.get("ESTAB", "0.5"))
+ESTILO = float(os.environ.get("ESTILO", "0.15"))
+VELOC = float(os.environ.get("VELOC", "1.08"))
+TOM = float(os.environ.get("TOM", "0"))  # semitons
 LIMPEZA = os.environ.get("LIMPEZA", ",".join(([f"rubberband=pitch={2 ** (TOM / 12):.4f}:formant=preserved"] if TOM else []) + [
     "highpass=f=80", "lowpass=f=14000",
     "afftdn=nr=12:nf=-35:tn=1",
