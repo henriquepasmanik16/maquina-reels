@@ -13,7 +13,12 @@ ELEVEN_MODELO = os.environ.get("ELEVEN_MODELO", "eleven_multilingual_v2")
 RATE = os.environ.get("RATE", "+0%")
 MIN_DUR = {"editor": 2.5, "checklist": 5.5, "tabela": 4.5, "agenda": 6.0, "comentario": 3.5}
 GAP = 0.3
-LIMPEZA = os.environ.get("LIMPEZA", ",".join([
+# Voz firme: mais estável, sem exagero de entonação, ritmo um pouco mais decidido e tom levemente mais grave.
+ESTAB = float(os.environ.get("ESTAB", "0.72"))
+ESTILO = float(os.environ.get("ESTILO", "0.0"))
+VELOC = float(os.environ.get("VELOC", "1.06"))
+TOM = float(os.environ.get("TOM", "-1.5"))  # semitons
+LIMPEZA = os.environ.get("LIMPEZA", ",".join(([f"rubberband=pitch={2 ** (TOM / 12):.4f}:formant=preserved"] if TOM else []) + [
     "highpass=f=80", "lowpass=f=14000",
     "afftdn=nr=12:nf=-35:tn=1",
     "equalizer=f=250:t=q:w=1.2:g=-3", "equalizer=f=4500:t=q:w=1.5:g=2",
@@ -35,7 +40,7 @@ def eleven(texto, destino):
     import urllib.request
     url = f"https://api.elevenlabs.io/v1/text-to-speech/{ELEVEN_VOZ}?output_format=mp3_44100_128"
     corpo = json.dumps({"text": texto, "model_id": ELEVEN_MODELO,
-                        "voice_settings": {"stability": 0.5, "similarity_boost": 0.8, "style": 0.15, "use_speaker_boost": True}}).encode()
+                        "voice_settings": {"stability": ESTAB, "similarity_boost": 0.8, "style": ESTILO, "speed": VELOC, "use_speaker_boost": True}}).encode()
     headers = {"Content-Type": "application/json", "Accept": "audio/mpeg"}
     if os.environ.get("ELEVENLABS_API_KEY"):
         headers["xi-api-key"] = os.environ["ELEVENLABS_API_KEY"]
