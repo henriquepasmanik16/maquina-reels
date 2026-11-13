@@ -1,4 +1,4 @@
-- PRONTO PARA PUBLICAR: videos/03-slack-com-agentes.mp4 (agentes.chat, github.com/agentes-chat/agentes-chat) — gerado 2026-11-12 manual
+- PUBLICADO (2026-11-13 manhã, media 17920519074496219): videos/03-slack-com-agentes.mp4 (agentes.chat, github.com/agentes-chat/agentes-chat) — gerado 2026-11-12 manual
 - PRONTO PARA PUBLICAR: videos/04-claude-code-ao-vivo.mp4 (lot-map, github.com/alexeyw/lot-map) — gerado 2026-11-12 manual
 - PRONTO PARA PUBLICAR: videos/05-claude-faz-filmes.mp4 (O Claude agora faz filmes inteiros com código: skill cinecode, github.com/sarpstar/cinecode) — gerado 2026-11-12 manhã
 - PRONTO PARA PUBLICAR: videos/06-claude-usa-iphone.mp4 (O Claude agora mexe no seu iPhone: Poki, github.com/JosssphZhou/poki) — gerado 2026-11-12 tarde
