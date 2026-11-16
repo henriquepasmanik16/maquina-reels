@@ -1,0 +1,84 @@
+{
+  "id": "08-reuniao-anotada-gratis",
+  "titulo": "A IA anota suas reuniões de graça, sem robô na chamada",
+  "fonte": "https://github.com/FrigadeHQ/yogurt",
+  "capa": {
+    "texto": "Suas reuniões anotadas",
+    "destaque": "sem robô na call"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Tem um app grátis que anota suas reuniões com IA sem colocar nenhum robô na chamada.",
+      "destaque": ["grátis", "robô"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "reuniao.md",
+        "linhas": ["resumo da reunião", "próximos passos de cada um"],
+        "hora": "agora",
+        "icone": "🎙️"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Você passa a call inteira digitando, perde metade do que foi dito e ainda tem que montar o resumo depois.",
+      "destaque": ["digitando", "resumo"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Reunião sem anotação",
+        "direita": "dor",
+        "itens": ["Digitar enquanto escuta", "Esquecer quem disse o quê", "Resumo feito na mão"],
+        "riscar": true,
+        "icone": "😵"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Yogurt é de código aberto: grava o áudio do seu computador, transcreve ao vivo e escreve o resumo. Tudo roda na sua máquina.",
+      "destaque": ["Yogurt", "máquina."],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O que ele faz",
+        "direita": "código aberto",
+        "selo": "✓ grátis",
+        "linhas": [["Transcrição ao vivo"], ["Resumo da reunião"], ["Perguntas sobre as calls"], ["Dados no seu computador"]],
+        "icone": "🧠"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "E ele tem um servidor MCP local: seus agentes de IA leem as anotações e as transcrições direto dali.",
+      "destaque": ["MCP", "agentes"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Como usar",
+        "direita": "Mac, Windows, Linux",
+        "itens": ["Baixa o app", "Grava a call", "Liga o MCP local"],
+        "riscar": false,
+        "icone": "🔌"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "como gravar", "ligar o MCP"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
