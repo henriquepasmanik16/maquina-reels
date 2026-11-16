@@ -1,0 +1,84 @@
+{
+  "id": "07-claude-sem-cara-de-ia",
+  "titulo": "O Claude agora escreve sem cara de IA",
+  "fonte": "https://github.com/Dodaios/ste80-humanizer",
+  "capa": {
+    "texto": "O Claude agora escreve",
+    "destaque": "sem cara de IA"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Tem uma skill grátis que faz o texto do Claude parecer escrito por uma pessoa.",
+      "destaque": ["grátis", "pessoa."],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "texto.md",
+        "linhas": ["humaniza esse texto", "sem mudar o que ele diz"],
+        "hora": "agora",
+        "icone": "✍️"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Todo mundo reconhece texto de IA: abertura animada, frase de efeito no final e frase comprida demais.",
+      "destaque": ["reconhece", "comprida"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Cara de IA",
+        "direita": "vícios",
+        "itens": ["Ótima pergunta!", "Frase de efeito no final", "Três ideias numa frase"],
+        "riscar": true,
+        "icone": "🤖"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "A STE80 Humanizer é uma skill aberta no GitHub que limpa esses vícios em duas passadas.",
+      "destaque": ["Humanizer", "duas"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "As duas passadas",
+        "direita": "código aberto",
+        "selo": "✓ skill",
+        "linhas": [["Tira os vícios de IA"], ["Frases curtas e diretas"], ["Uma ideia por frase"], ["Mantém todos os fatos"]],
+        "icone": "🧹"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Você instala no Claude Code, cola o texto, e ele reescreve sem mudar o que foi dito.",
+      "destaque": ["Claude", "reescreve"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Como usar",
+        "direita": "Claude Code",
+        "itens": ["Instala a skill", "Cola o texto", "Recebe a versão limpa"],
+        "riscar": false,
+        "icone": "✅"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "como usar", "modos"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
