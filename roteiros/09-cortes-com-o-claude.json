@@ -1,0 +1,126 @@
+{
+  "id": "09-cortes-com-o-claude",
+  "titulo": "ClipForge: o Claude transforma vídeo do YouTube em cortes prontos",
+  "fonte": "https://github.com/lowdevco/Clip-Forge",
+  "capa": {
+    "texto": "O Claude agora faz",
+    "destaque": "seus cortes"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Essa skill grátis do Claude pega um vídeo do YouTube e devolve cortes prontos pros Reels.",
+      "destaque": [
+        "grátis",
+        "cortes"
+      ],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "cortes/",
+        "linhas": [
+          "corte vertical pronto",
+          "título e hashtags junto"
+        ],
+        "hora": "agora",
+        "icone": "🎬"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Fazer corte na mão é assistir tudo, caçar o melhor trecho e legendar um por um.",
+      "destaque": [
+        "mão",
+        "legendar"
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Corte feito na mão",
+        "direita": "dor",
+        "itens": [
+          "Assistir o vídeo inteiro",
+          "Achar o melhor trecho",
+          "Enquadrar e legendar"
+        ],
+        "riscar": true,
+        "icone": "😩"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O ClipForge é de código aberto: você cola o link e ele te mostra os melhores momentos, com nota pra cada um.",
+      "destaque": [
+        "ClipForge",
+        "nota"
+      ],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O que ele faz",
+        "direita": "código aberto",
+        "selo": "✓ grátis",
+        "linhas": [
+          [
+            "Baixa o vídeo pelo link"
+          ],
+          [
+            "Acha os melhores momentos"
+          ],
+          [
+            "Dá nota pra cada trecho"
+          ],
+          [
+            "Espera você escolher"
+          ]
+        ],
+        "icone": "✂️"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Você escolhe e ele edita na vertical, com zoom, legenda animada e até a descrição do post.",
+      "destaque": [
+        "vertical",
+        "legenda"
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O corte sai com",
+        "direita": "Shorts, Reels, TikTok",
+        "itens": [
+          "Enquadramento vertical",
+          "Zoom nos momentos fortes",
+          "Legenda animada"
+        ],
+        "riscar": false,
+        "icone": "📱"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": [
+        "AGENTE"
+      ],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": [
+          "instalação",
+          "primeiro corte",
+          "estilos de edição"
+        ]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
