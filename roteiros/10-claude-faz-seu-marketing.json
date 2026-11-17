@@ -1,0 +1,84 @@
+{
+  "id": "10-claude-faz-seu-marketing",
+  "titulo": "Boring Marketing Skills: o Claude vira sua equipe de marketing de graça",
+  "fonte": "https://github.com/boringmarketer/boring-marketing-skills",
+  "capa": {
+    "texto": "O Claude agora faz",
+    "destaque": "seu marketing"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Saiu um pacote com mais de trinta skills grátis que transformam o Claude na sua equipe de marketing.",
+      "destaque": ["grátis", "marketing"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "skills/marketing",
+        "linhas": ["pesquisa, copy e anúncios", "tudo dentro do Claude Code"],
+        "hora": "agora",
+        "icone": "📣"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Quem tem negócio pequeno faz tudo sozinho: página, anúncio, e-mail, resposta de avaliação.",
+      "destaque": ["sozinho", "anúncio"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Marketing feito sozinho",
+        "direita": "dor",
+        "itens": ["Escrever a página", "Montar o anúncio", "Responder avaliações"],
+        "riscar": true,
+        "icone": "😩"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Boring Marketing Skills é de código aberto: você roda o start here, diz o nome do negócio e ele lê o site e as avaliações.",
+      "destaque": ["código aberto", "avaliações"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O start here faz",
+        "direita": "licença MIT",
+        "selo": "✓ grátis",
+        "linhas": [["Lê o site do negócio"], ["Lê as avaliações"], ["Cria o arquivo da marca"], ["Indica a próxima skill"]],
+        "icone": "🧭"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Depois tem skill pra SEO local, anúncio no Google e na Meta, e-mail de follow-up e posts com a voz da marca.",
+      "destaque": ["SEO", "anúncio"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Skills do pacote",
+        "direita": "Claude Code, Codex, Cursor",
+        "itens": ["SEO e perfil no Google", "Anúncios Google e Meta", "E-mails e posts"],
+        "riscar": false,
+        "icone": "🚀"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "primeira skill", "qual usar primeiro"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
