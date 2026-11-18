@@ -1,0 +1,84 @@
+{
+  "id": "11-claude-cria-jogos-3d",
+  "titulo": "Guizang Game Skill: o Claude cria um jogo 3D do zero",
+  "fonte": "https://github.com/op7418/guizang-game-skill",
+  "capa": {
+    "texto": "O Claude agora cria",
+    "destaque": "jogos 3D"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Saiu uma skill grátis que faz o Claude criar um jogo 3D de ação do zero, jogável no navegador.",
+      "destaque": ["grátis", "jogo 3D"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "skills/game",
+        "linhas": ["jogo 3D de ação", "roda no navegador"],
+        "hora": "agora",
+        "icone": "🎮"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Quando você só pede um jogo 3D pra IA, quase sempre vem um bonequinho de bloco, sem graça, que você nem consegue rodar.",
+      "destaque": ["bloco", "rodar"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Pedir sem a skill",
+        "direita": "dor",
+        "itens": ["Personagem de bloco", "Combate sem impacto", "Difícil de rodar"],
+        "riscar": true,
+        "icone": "🧱"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Com a Guizang Game Skill, o Claude primeiro pergunta o que você quer, usa suas ferramentas de imagem e testa o jogo sozinho, tirando print.",
+      "destaque": ["pergunta", "sozinho"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "A skill faz",
+        "direita": "código aberto",
+        "selo": "✓ grátis",
+        "linhas": [["Pergunta o que você quer"], ["Usa suas ferramentas de arte"], ["Testa tirando print"], ["Lista de erros comuns"]],
+        "icone": "🧭"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "No fim, ele empacota tudo num único arquivo HTML. O jogo de demonstração abre no celular e no computador.",
+      "destaque": ["HTML", "celular"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O resultado",
+        "direita": "Claude Code e Codex",
+        "itens": ["Um arquivo HTML", "Abre no celular", "Sem instalar nada"],
+        "riscar": false,
+        "icone": "🕹️"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "primeiro pedido", "o que preparar"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
