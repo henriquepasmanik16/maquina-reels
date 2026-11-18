@@ -1,0 +1,84 @@
+{
+  "id": "12-claude-foge-do-obvio",
+  "titulo": "antialgorithm: o Claude foge da ideia mais óbvia",
+  "fonte": "https://github.com/mankidev/antialgorithm",
+  "capa": {
+    "texto": "O Claude agora foge",
+    "destaque": "do óbvio"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Tem uma skill grátis que impede o Claude de te entregar sempre a ideia mais óbvia.",
+      "destaque": ["grátis", "óbvia"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "skills/antialgorithm",
+        "linhas": ["nomes, textos, cartazes", "longe do óbvio"],
+        "hora": "agora",
+        "icone": "🧠"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Você pede um nome, um cartaz ou uma ideia de jogo, e a IA devolve aquela resposta média que todo mundo recebe.",
+      "destaque": ["média", "todo mundo"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Pedir sem a skill",
+        "direita": "dor",
+        "itens": ["Nome genérico", "Cartaz igual aos outros", "Ideia repetida"],
+        "riscar": true,
+        "icone": "😴"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Com a antialgorithm, o Claude primeiro diz qual seria a escolha óbvia, e depois se afasta dela com um motivo do seu projeto.",
+      "destaque": ["óbvia", "seu projeto"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "A skill faz",
+        "direita": "código aberto",
+        "selo": "✓ grátis",
+        "linhas": [["Nomeia a escolha média"], ["Se afasta dela"], ["Usa um motivo do projeto"], ["Não repete a última ideia"]],
+        "icone": "🧭"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Ela sorteia um ponto de partida, então duas pessoas com o mesmo pedido começam em lugares diferentes. E ainda confere se o texto do cartaz ficou legível.",
+      "destaque": ["sorteia", "legível"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O resultado",
+        "direita": "Claude Code",
+        "itens": ["Ponto de partida sorteado", "Ideias que não se repetem", "Texto do cartaz conferido"],
+        "riscar": false,
+        "icone": "🎨"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "primeiro pedido", "o que preparar"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
