@@ -1,0 +1,84 @@
+{
+  "id": "14-claude-vira-designer",
+  "titulo": "craft: o Claude desenha telas como um designer de verdade",
+  "fonte": "https://github.com/diego3g/craft",
+  "capa": {
+    "texto": "O Claude agora vira",
+    "destaque": "seu designer"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Tem um plugin grátis que faz o Claude desenhar telas como um designer cuidadoso, e não como um robô apressado.",
+      "destaque": ["grátis", "designer"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "/plugin install craft",
+        "linhas": ["uma página de preços", "com todos os estados"],
+        "hora": "agora",
+        "icone": "🎨"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Quando você pede uma tela pra IA, ela entrega só a versão bonita e esquece o erro, o carregando e a lista vazia.",
+      "destaque": ["bonita", "esquece"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Tela feita às pressas",
+        "direita": "dor",
+        "itens": ["Sem tela de erro", "Sem estado vazio", "Cada tela de um jeito"],
+        "riscar": true,
+        "icone": "😬"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Com o craft, o Claude primeiro te entrevista, escreve um briefing de design e só depois começa a desenhar.",
+      "destaque": ["entrevista", "briefing"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O craft faz",
+        "direita": "código aberto",
+        "selo": "✓ grátis",
+        "linhas": [["Briefing no DESIGN.md"], ["Lista todos os estados"], ["Três direções diferentes"], ["Revisa antes de mostrar"]],
+        "icone": "📐"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Ele usa as peças do seu design system, para pra pedir o seu sim e confere o próprio trabalho antes de te mostrar.",
+      "destaque": ["design system", "sim"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O resultado",
+        "direita": "Claude Code",
+        "itens": ["Telas no seu padrão", "Você aprova cada passo", "Funciona até em HTML puro"],
+        "riscar": false,
+        "icone": "✅"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "primeiro pedido", "como revisar a tela"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
