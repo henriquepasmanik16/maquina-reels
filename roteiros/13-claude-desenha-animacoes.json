@@ -1,0 +1,84 @@
+{
+  "id": "13-claude-desenha-animacoes",
+  "titulo": "line-art-animation: o Claude desenha animações a traço",
+  "fonte": "https://github.com/JDhruv14/line-art-animation",
+  "capa": {
+    "texto": "O Claude agora desenha",
+    "destaque": "animações a traço"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Tem uma skill grátis que faz o Claude desenhar animações a traço, com bonequinhos que andam e reagem.",
+      "destaque": ["grátis", "andam"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "skills/line-art-animation",
+        "linhas": ["cena desenhada a traço", "do dia até a noite"],
+        "hora": "agora",
+        "icone": "✒️"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Animar uma ilustração pro seu site ou pro seu vídeo costuma exigir um animador e muitas horas de ajuste.",
+      "destaque": ["animador", "horas"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Animar do jeito antigo",
+        "direita": "dor",
+        "itens": ["Contratar animador", "Ajustar quadro a quadro", "Imagem que pixela"],
+        "riscar": true,
+        "icone": "😩"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Com a line art animation, você descreve a cena e o Claude desenha tudo em SVG, que fica nítido em qualquer tamanho.",
+      "destaque": ["descreve", "SVG"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "A skill faz",
+        "direita": "código aberto",
+        "selo": "✓ grátis",
+        "linhas": [["Figuras que andam"], ["Ciclo de dia e noite"], ["Reage ao mouse"], ["Vira vídeo"]],
+        "icone": "🎞️"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Ele mostra uma figura pra você aprovar antes de montar o resto, confere o movimento quadro a quadro e ainda exporta em vídeo.",
+      "destaque": ["aprovar", "vídeo"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O resultado",
+        "direita": "Claude Code",
+        "itens": ["Uma figura para aprovar", "Movimento conferido", "Vídeo exportado"],
+        "riscar": false,
+        "icone": "🚶"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "primeiro pedido", "como virar vídeo"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
