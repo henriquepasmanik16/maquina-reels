@@ -1,0 +1,84 @@
+{
+  "id": "13-claude-vira-designer",
+  "titulo": "craft: o Claude desenha telas como um designer de verdade",
+  "fonte": "https://github.com/diego3g/craft",
+  "capa": {
+    "texto": "O Claude agora vira",
+    "destaque": "seu designer"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Tem um plugin grátis que faz o Claude desenhar telas como um designer cuidadoso.",
+      "destaque": ["grátis", "designer"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "/craft",
+        "linhas": ["uma página de preços", "com todos os estados"],
+        "hora": "agora",
+        "icone": "🎨"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Você pede uma tela pra IA e ela já sai desenhando, sem pensar no erro, na tela vazia, nem no seu padrão visual.",
+      "destaque": ["erro", "padrão visual"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Pedir sem o craft",
+        "direita": "dor",
+        "itens": ["Esquece a tela vazia", "Esquece o erro", "Cada tela de um jeito"],
+        "riscar": true,
+        "icone": "😵"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Com o craft, o Claude primeiro escreve um resumo do projeto, lista cada estado da tela e usa as peças do seu design system.",
+      "destaque": ["cada estado", "design system"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O craft faz",
+        "direita": "código aberto",
+        "selo": "✓ grátis",
+        "linhas": [["Escreve o resumo de design"], ["Lista todos os estados"], ["Usa seus componentes"], ["Confere antes de mostrar"]],
+        "icone": "📐"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Ele confere o próprio trabalho antes de te mostrar, para pra pedir seu sim e funciona no Figma ou em HTML.",
+      "destaque": ["confere", "Figma"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O resultado",
+        "direita": "Claude Code",
+        "itens": ["Revisão antes de mostrar", "Pede seu sim", "Figma ou HTML"],
+        "riscar": false,
+        "icone": "✅"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "primeiro pedido", "o que preparar"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
