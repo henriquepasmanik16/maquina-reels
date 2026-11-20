@@ -1,0 +1,126 @@
+{
+  "id": "14-claude-desenha-bonequinhos",
+  "titulo": "stick-scene: o Claude desenha bonequinhos animados que explicam seu produto",
+  "fonte": "https://github.com/nilbuild/stick-scene",
+  "capa": {
+    "texto": "O Claude agora anima",
+    "destaque": "bonequinhos"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Tem uma skill grátis que faz o Claude desenhar bonequinhos animados explicando o que o seu produto faz.",
+      "destaque": [
+        "grátis",
+        "bonequinhos"
+      ],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "/stick-scene",
+        "linhas": [
+          "mostre o que meu app faz",
+          "na página inicial"
+        ],
+        "hora": "agora",
+        "icone": "🕺"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Explicar seu produto numa página costuma virar um paredão de texto, ou um vídeo caro que ninguém assiste até o fim.",
+      "destaque": [
+        "texto,",
+        "caro"
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Explicar sem animação",
+        "direita": "dor",
+        "itens": [
+          "Paredão de texto",
+          "Vídeo caro de produzir",
+          "Ninguém entende de primeira"
+        ],
+        "riscar": true,
+        "icone": "😵"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Com a stick-scene, o Claude lê seu projeto, te sugere algumas ideias de cena e desenha a escolhida num canvas leve, sem dependência.",
+      "destaque": [
+        "projeto,",
+        "ideias"
+      ],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "A stick-scene faz",
+        "direita": "código aberto",
+        "selo": "✓ grátis",
+        "linhas": [
+          [
+            "Lê o seu projeto"
+          ],
+          [
+            "Sugere ideias de cena"
+          ],
+          [
+            "Desenha a animação"
+          ],
+          [
+            "Coloca na sua página"
+          ]
+        ],
+        "icone": "✏️"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Ele confere quadro a quadro se nada ficou cortado, e você pede ajuste falando normal: mais devagar, na cor da marca, em loop.",
+      "destaque": [
+        "quadro",
+        "marca,"
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O resultado",
+        "direita": "Claude Code",
+        "itens": [
+          "Confere quadro a quadro",
+          "Ajuste falando normal",
+          "Cor da marca, em loop"
+        ],
+        "riscar": false,
+        "icone": "✅"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": [
+        "AGENTE"
+      ],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": [
+          "instalação",
+          "primeiro pedido",
+          "como ajustar"
+        ]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
