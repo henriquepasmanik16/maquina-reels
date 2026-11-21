@@ -1,0 +1,84 @@
+{
+  "id": "15-claude-duas-contas",
+  "titulo": "claude-multi-desktop: sua conta pessoal e a do trabalho do Claude abertas juntas no Mac",
+  "fonte": "https://github.com/jackson-cmd/claude-multi-desktop",
+  "capa": {
+    "texto": "Duas contas do Claude",
+    "destaque": "abertas juntas"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Agora dá pra deixar sua conta pessoal e a do trabalho do Claude abertas ao mesmo tempo no Mac.",
+      "destaque": ["pessoal", "trabalho"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Terminal",
+        "linhas": ["claude-multi-desktop add Trabalho", "claude-multi-desktop open Trabalho"],
+        "hora": "agora",
+        "icone": "🪟"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude Desktop só abre uma conta por vez. Pra trocar, você sai de uma, entra na outra e perde o ritmo.",
+      "destaque": ["uma", "ritmo."],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Com uma conta por vez",
+        "direita": "dor",
+        "itens": ["Sair da conta pessoal", "Entrar na do trabalho", "Fazer tudo de novo depois"],
+        "riscar": true,
+        "icone": "😩"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O claude-multi-desktop é um script grátis e não oficial que cria um atalho pra cada conta, cada uma com seu login e suas conversas.",
+      "destaque": ["grátis", "atalho"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O claude-multi-desktop faz",
+        "direita": "código aberto",
+        "selo": "✓ grátis",
+        "linhas": [["Um atalho por conta"], ["Login separado"], ["Conversas separadas"], ["Não mexe no Claude"]],
+        "icone": "🔑"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "E o melhor: as duas usam as mesmas skills e configurações do Claude Code, e uma sessão consegue mandar mensagem pra outra.",
+      "destaque": ["skills", "mensagem"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Lado a lado",
+        "direita": "Claude Code",
+        "itens": ["Mesmas skills nas duas", "Mesma configuração", "Sessões conversam entre si"],
+        "riscar": false,
+        "icone": "🤝"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "criar o atalho", "abrir as duas"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
