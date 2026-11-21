@@ -4,3 +4,5 @@
 - PUBLICADO (2026-11-14 tarde, media 18036321230676019): videos/06-claude-usa-iphone.mp4 (O Claude agora mexe no seu iPhone: Poki, github.com/JosssphZhou/poki) — gerado 2026-11-12 tarde
 - PUBLICADO (2026-11-20 tarde, media 17867510496696249): videos/14-claude-desenha-bonequinhos.mp4 (stick-scene, github.com/nilbuild/stick-scene) — gerado e publicado na rotina
 - BLOQUEIO (2026-11-20 tarde): Windsor pausou as leituras (get_data) porque o plano Free inclui 1 conta e há 2 contas do Instagram conectadas. Sem leitura não deu para responder comentários AGENTE nem registrar seguidores. Solução: desconectar a conta @henrique_pasmanik no Windsor (deixar só @henrique.agentes) ou fazer upgrade. A publicação (create_video_post) continua funcionando.
+- PUBLICADO (2026-11-21 manhã, media 18131367934845164): videos/15-claude-duas-contas.mp4 (claude-multi-desktop, github.com/jackson-cmd/claude-multi-desktop) — gerado e publicado na rotina
+- BLOQUEIO CONTINUA (2026-11-21 manhã): leituras do Windsor ainda pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE não foram lidos nem respondidos.
