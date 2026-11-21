@@ -1,0 +1,84 @@
+{
+  "id": "16-claude-pixel-art-3d",
+  "titulo": "sprite-stacking: o Claude transforma pixel art em objeto 3D que gira",
+  "fonte": "https://github.com/danielwh2/sprite-stacking",
+  "capa": {
+    "texto": "O Claude agora gira",
+    "destaque": "pixel art em 3D"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude agora pega um desenho em pixel art e transforma num objeto 3D que gira na tela.",
+      "destaque": ["pixel", "3D"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude Code",
+        "linhas": ["Faz um carro em pixel art", "que dá pra girar em 3D"],
+        "hora": "agora",
+        "icone": "🕹️"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Fazer isso na mão dá trabalho. Você desenha camada por camada e monta tudo no olho.",
+      "destaque": ["camada", "olho."],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Do jeito manual",
+        "direita": "dor",
+        "itens": ["Desenhar cada camada", "Empilhar uma por uma", "Ajustar até parecer 3D"],
+        "riscar": true,
+        "icone": "😩"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O sprite-stacking é uma skill grátis. Você dá quatro vistas do desenho, de cima, de lado, de frente e de trás, e ela fatia tudo em camadas sozinha.",
+      "destaque": ["grátis", "camadas"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "Você entrega",
+        "direita": "código aberto",
+        "selo": "✓ grátis",
+        "linhas": [["Vista de cima"], ["Vista de lado"], ["Vista de frente"], ["Vista de trás"]],
+        "icone": "🧊"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Ela ainda gera uma página pra girar o objeto, com dia, noite, chuva e neve, e exporta a folha de sprites pro seu jogo.",
+      "destaque": ["girar", "jogo."],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "No visualizador",
+        "direita": "sprite-stacking",
+        "itens": ["Objeto girando", "Dia, noite, chuva e neve", "Folha de sprites exportada"],
+        "riscar": false,
+        "icone": "🌧️"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "as quatro vistas", "girar em 3D"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
