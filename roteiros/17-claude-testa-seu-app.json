@@ -1,0 +1,84 @@
+{
+  "id": "17-claude-testa-seu-app",
+  "titulo": "mobile-agent-testers: agentes do Claude Code testam seu app em 20 celulares ao mesmo tempo",
+  "fonte": "https://github.com/pierridotite/mobile-agent-testers",
+  "capa": {
+    "texto": "O Claude agora testa",
+    "destaque": "seu app em 20 celulares"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude agora testa seu aplicativo em vinte celulares diferentes ao mesmo tempo.",
+      "destaque": ["testa", "celulares"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude Code",
+        "linhas": ["Testa meu app como um", "usuário novo em cada celular"],
+        "hora": "agora",
+        "icone": "📱"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Testar na mão é chato. Você pega um celular, depois outro, troca o idioma, aumenta a fonte, e o bug escapa mesmo assim.",
+      "destaque": ["mão", "escapa"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Do jeito manual",
+        "direita": "dor",
+        "itens": ["Um celular por vez", "Trocar idioma e fonte", "Escrever roteiro de teste"],
+        "riscar": true,
+        "icone": "😩"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O mobile-agent-testers é de código aberto. Cada testador é um agente do Claude Code com seu próprio iPhone ou Android virtual, rodando no GitHub.",
+      "destaque": ["agente", "virtual"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "Cada testador tem",
+        "direita": "código aberto",
+        "selo": "✓ iOS e Android",
+        "linhas": [["Um celular virtual"], ["Um idioma e uma fonte"], ["Usa o app como gente nova"], ["Sem roteiro de teste"]],
+        "icone": "🤖"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "No fim, cada agente entrega um relatório de bugs com prints. Num app famoso, ele achou um iPhone onde não dava nem pra mandar mensagem.",
+      "destaque": ["relatório", "prints."],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O que você recebe",
+        "direita": "relatório",
+        "itens": ["Bugs com prints", "Onde o usuário travou", "O que corrigir primeiro"],
+        "riscar": false,
+        "icone": "🐞"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra testar o seu app.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "escolher os celulares", "ler o relatório"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
