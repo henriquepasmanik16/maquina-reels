@@ -10,3 +10,5 @@
 - BLOQUEIO CONTINUA (2026-11-21 tarde): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE e seguidores não foram lidos.
 - PUBLICADO (2026-11-23 manhã, 09:21, media 18645656041004547): videos/17-claude-testa-seu-app.mp4 (mobile-agent-testers, github.com/pierridotite/mobile-agent-testers) — gerado e publicado na rotina
 - BLOQUEIO CONTINUA (2026-11-23 manhã): leituras do Windsor ainda pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE não foram lidos nem respondidos, e o post 16 (VERIFICAR) segue sem confirmação.
+- PUBLICADO (2026-11-23 tarde, 15:53, media 18392333140236987): videos/18-claude-legenda-seus-videos.mp4 (Subtle, github.com/0xpratzyy/subtle) — gerado e publicado na rotina
+- BLOQUEIO CONTINUA (2026-11-23 tarde): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE e seguidores não foram lidos; post 16 (VERIFICAR) segue sem confirmação.
