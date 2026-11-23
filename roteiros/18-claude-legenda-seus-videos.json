@@ -1,0 +1,84 @@
+{
+  "id": "18-claude-legenda-seus-videos",
+  "titulo": "Subtle: o Claude coloca legenda animada nos seus vídeos, sem subir o vídeo pra lugar nenhum",
+  "fonte": "https://github.com/0xpratzyy/subtle",
+  "capa": {
+    "texto": "O Claude agora legenda",
+    "destaque": "seus vídeos de graça"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude agora coloca legenda animada nos seus vídeos, de graça, sem você subir o vídeo pra lugar nenhum.",
+      "destaque": ["legenda", "graça,"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude Code",
+        "linhas": ["Coloca legenda animada", "no meu vídeo de hoje"],
+        "hora": "agora",
+        "icone": "🎬"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Legendar na mão cansa. Você corrige palavra por palavra, escolhe o que destacar, e ainda paga app pra isso.",
+      "destaque": ["mão", "paga"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Do jeito manual",
+        "direita": "dor",
+        "itens": ["Corrigir cada palavra", "Escolher o destaque", "Pagar assinatura de app"],
+        "riscar": true,
+        "icone": "😩"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Subtle é uma skill de código aberto pro Claude Code. Ele transcreve sua fala e anima a legenda no estilo que você escolher, tudo no seu Mac.",
+      "destaque": ["skill", "Mac."],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O que o Subtle faz",
+        "direita": "código aberto",
+        "selo": "✓ roda no seu Mac",
+        "linhas": [["Transcreve sua fala"], ["Anima palavra por palavra"], ["Destaca o que importa"], ["Sem chave de API"]],
+        "icone": "✨"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "E o Claude escolhe as palavras que merecem destaque, explica o porquê, e ainda tira a legenda da frente do seu rosto.",
+      "destaque": ["destaque,", "rosto."],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O que você recebe",
+        "direita": "pronto",
+        "itens": ["Vídeo já legendado", "Arquivo de legenda editável", "Prévia pra conferir"],
+        "riscar": false,
+        "icone": "🎞️"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "pedir a legenda", "escolher o estilo"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
