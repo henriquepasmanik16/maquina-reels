@@ -1,0 +1,84 @@
+{
+  "id": "20-claude-teatro-de-agentes",
+  "titulo": "Agent Theater: seus agentes do Claude Code trabalhando ao vivo num palco pixel art",
+  "fonte": "https://github.com/tarqmamdouh/agent-theater",
+  "capa": {
+    "texto": "Veja seus agentes",
+    "destaque": "trabalhando ao vivo"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Agora dá pra ver seus agentes do Claude Code trabalhando, como personagens num palco de pixel art.",
+      "destaque": ["personagens", "pixel"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude Code",
+        "linhas": ["/theater", "abrindo o palco ao lado do chat"],
+        "hora": "agora",
+        "icone": "🎭"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Quando vários agentes rodam juntos, você só vê um terminal rolando e não sabe quem está fazendo o quê.",
+      "destaque": ["terminal", "quem"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Agente trabalhando hoje",
+        "direita": "dor",
+        "itens": ["Só um cursor girando", "Log rolando sem parar", "Nenhuma ideia de quem faz o quê"],
+        "riscar": true,
+        "icone": "😵"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Agent Theater é um plugin grátis pro Claude Code. Cada agente ganha um personagem com função: o que programa, o que revisa, o que conserta.",
+      "destaque": ["grátis", "personagem"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "Quem está no palco",
+        "direita": "plugin",
+        "selo": "✓ grátis",
+        "linhas": [["Programador de fone"], ["Revisor de óculos"], ["Consertador com chave"], ["Verificador de jaleco"]],
+        "icone": "👾"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Cada um mostra num balão o que está fazendo. Tudo roda no seu computador, e ele ainda grava um vídeo vertical do palco.",
+      "destaque": ["balão", "vertical"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O que você ganha",
+        "direita": "pronto",
+        "itens": ["Balão com a tarefa de cada um", "Roda só no seu computador", "Vídeo do palco em 9:16"],
+        "riscar": false,
+        "icone": "🎬"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "abrir o palco", "gravar o vídeo"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
