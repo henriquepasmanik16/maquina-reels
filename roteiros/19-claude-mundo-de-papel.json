@@ -1,0 +1,84 @@
+{
+  "id": "19-claude-mundo-de-papel",
+  "titulo": "papercraft: o Claude monta jogos, sites e animações com cara de maquete de papel",
+  "fonte": "https://github.com/xikhar/papercraft",
+  "capa": {
+    "texto": "O Claude agora monta",
+    "destaque": "mundos de papel"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude agora transforma qualquer ideia num mundo de papel que se dobra e ganha vida na tela.",
+      "destaque": ["papel", "vida"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude Code",
+        "linhas": ["Faz a página da minha padaria", "como um livro pop-up de papel"],
+        "hora": "agora",
+        "icone": "📜"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Quando você pede um visual diferente, a IA quase sempre entrega aquela cara genérica, igual a todo mundo.",
+      "destaque": ["genérica,"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O visual de sempre",
+        "direita": "dor",
+        "itens": ["Cara de modelo pronto", "Sem identidade", "Igual ao concorrente"],
+        "riscar": true,
+        "icone": "😐"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O papercraft é uma skill gratuita e de código aberto pro Claude Code. Ela ensina o Claude a montar peças de cartolina que saltam do chão, com sombra macia e som de papel.",
+      "destaque": ["gratuita", "cartolina"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O que o papercraft faz",
+        "direita": "código aberto",
+        "selo": "✓ skill grátis",
+        "linhas": [["Peças que saltam do chão"], ["Sombra macia em camadas"], ["Movimento de dobradiça"], ["Som de papel"]],
+        "icone": "✂️"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "E serve pra jogo, site ou animação. Ele já exporta em formato vertical, pronto pra virar reel.",
+      "destaque": ["jogo,", "reel."],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Onde usar",
+        "direita": "pronto",
+        "itens": ["Jogo no navegador", "Página de site", "Vídeo vertical pro reel"],
+        "riscar": false,
+        "icone": "🎮"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "primeiro pedido", "exportar o vídeo"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
