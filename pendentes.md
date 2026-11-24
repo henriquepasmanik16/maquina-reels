@@ -12,3 +12,5 @@
 - BLOQUEIO CONTINUA (2026-11-23 manhã): leituras do Windsor ainda pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE não foram lidos nem respondidos, e o post 16 (VERIFICAR) segue sem confirmação.
 - PUBLICADO (2026-11-23 tarde, 15:53, media 18392333140236987): videos/18-claude-legenda-seus-videos.mp4 (Subtle, github.com/0xpratzyy/subtle) — gerado e publicado na rotina
 - BLOQUEIO CONTINUA (2026-11-23 tarde): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE e seguidores não foram lidos; post 16 (VERIFICAR) segue sem confirmação.
+- PUBLICADO (2026-11-24 manhã, 09:19, media 18142211458651021): videos/19-claude-mundo-de-papel.mp4 (papercraft, github.com/xikhar/papercraft) — gerado e publicado na rotina
+- BLOQUEIO CONTINUA (2026-11-24 manhã): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE não foram lidos nem respondidos; post 16 (VERIFICAR) segue sem confirmação.
