@@ -1,0 +1,84 @@
+{
+  "id": "21-claude-desenha-diagramas",
+  "titulo": "open-diagram: o Claude desenha diagramas de sistema que conferem o próprio layout",
+  "fonte": "https://github.com/lukendeasy/open-diagram",
+  "capa": {
+    "texto": "O Claude agora desenha",
+    "destaque": "diagramas sem bagunça"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude agora desenha o diagrama do seu sistema inteiro, e confere sozinho se nada ficou encavalado.",
+      "destaque": ["diagrama", "sozinho"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude Code",
+        "linhas": ["Desenha como funciona meu app", "do cadastro até o pagamento"],
+        "hora": "agora",
+        "icone": "🗺️"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Quando você pede um diagrama pra IA, sai caixa em cima de caixa, texto cortado e seta passando por cima de tudo.",
+      "destaque": ["caixa", "seta"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Diagrama feito com IA",
+        "direita": "dor",
+        "itens": ["Caixas uma em cima da outra", "Texto cortado no meio", "Seta atravessando tudo"],
+        "riscar": true,
+        "icone": "😵"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O open-diagram é grátis e de código aberto. Ele mede cada palavra antes de montar e aponta pelo nome cada caixa que bateu.",
+      "destaque": ["grátis", "nome"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O que ele confere",
+        "direita": "MCP",
+        "selo": "✓ grátis",
+        "linhas": [["Cada texto cabe na caixa"], ["Nenhuma caixa encostada"], ["Nenhuma seta cruzando bloco"]],
+        "icone": "📐"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Aí o Claude corrige e tenta de novo, até sair limpo. Roda no seu computador e entrega a imagem pronta pra apresentação.",
+      "destaque": ["corrige", "limpo."],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O que você ganha",
+        "direita": "pronto",
+        "itens": ["Sistema, processo ou fluxo de vendas", "Roda só no seu computador", "Imagem em SVG e PNG"],
+        "riscar": false,
+        "icone": "✅"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra ligar no Claude.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "ligar no Claude", "primeiro diagrama"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
