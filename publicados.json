@@ -130,5 +130,12 @@
     "id": "20-claude-teatro-de-agentes",
     "tema": "Agent Theater: seus agentes do Claude Code trabalhando ao vivo num palco pixel art",
     "media_id": "18127044490938513"
+  },
+  {
+    "data": "2026-11-25",
+    "hora": "09:17",
+    "id": "21-claude-desenha-diagramas",
+    "tema": "open-diagram: o Claude desenha diagramas de sistema que conferem o próprio layout",
+    "media_id": "18101653916539202"
   }
 ]

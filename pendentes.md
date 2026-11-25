@@ -16,3 +16,5 @@
 - BLOQUEIO CONTINUA (2026-11-24 manhã): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE não foram lidos nem respondidos; post 16 (VERIFICAR) segue sem confirmação.
 - PUBLICADO (2026-11-24 tarde, 15:52, media 18127044490938513): videos/20-claude-teatro-de-agentes.mp4 (Agent Theater, github.com/tarqmamdouh/agent-theater) — gerado e publicado na rotina
 - BLOQUEIO CONTINUA (2026-11-24 tarde): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE e seguidores não foram lidos; post 16 (VERIFICAR) segue sem confirmação.
+- PUBLICADO (2026-11-25 manhã, 09:17, media 18101653916539202): videos/21-claude-desenha-diagramas.mp4 (open-diagram, github.com/lukendeasy/open-diagram) — gerado e publicado na rotina
+- BLOQUEIO CONTINUA (2026-11-25 manhã): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE não foram lidos nem respondidos; post 16 (VERIFICAR) segue sem confirmação.
