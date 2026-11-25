@@ -137,5 +137,12 @@
     "id": "21-claude-desenha-diagramas",
     "tema": "open-diagram: o Claude desenha diagramas de sistema que conferem o próprio layout",
     "media_id": "18101653916539202"
+  },
+  {
+    "data": "2026-11-25",
+    "hora": "15:51",
+    "id": "22-claude-alinha-seu-site",
+    "tema": "gridlines: o Claude passa uma régua no seu site e alinha tudo",
+    "media_id": "18021193583978412"
   }
 ]
