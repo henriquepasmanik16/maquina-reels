@@ -1,0 +1,123 @@
+{
+  "id": "22-claude-alinha-seu-site",
+  "titulo": "gridlines: o Claude passa uma régua no seu site e alinha tudo",
+  "fonte": "https://github.com/pritamux/gridlines",
+  "capa": {
+    "texto": "O Claude agora alinha",
+    "destaque": "cada canto do site"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Seu site parece amador e você não sabe por quê? O Claude agora passa uma régua na tela e acha o motivo.",
+      "destaque": [
+        "amador",
+        "régua"
+      ],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude Code",
+        "linhas": [
+          "/gridlines",
+          "alinha o menu lateral"
+        ],
+        "hora": "agora",
+        "icone": "📏"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "É quase sempre alinhamento. Um ícone fora do lugar, um texto mais pra frente, um botão que não bate.",
+      "destaque": [
+        "alinhamento",
+        "botão"
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O que deixa a tela torta",
+        "direita": "dor",
+        "itens": [
+          "Ícone fora do lugar",
+          "Texto começando mais à frente",
+          "Botão desencontrado"
+        ],
+        "riscar": true,
+        "icone": "😬"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O gridlines é uma skill grátis e de código aberto. Ela desenha linhas-guia na sua tela e aponta cada item que saiu da linha.",
+      "destaque": [
+        "grátis",
+        "linhas-guia"
+      ],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O que a skill faz",
+        "direita": "skill",
+        "selo": "✓ grátis",
+        "linhas": [
+          [
+            "Desenha as linhas-guia"
+          ],
+          [
+            "Aponta quem saiu da linha"
+          ],
+          [
+            "Ajusta o espaçamento"
+          ]
+        ],
+        "icone": "📐"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Depois o Claude ajusta o espaçamento, e menu, barra e tabela passam a dividir as mesmas bordas.",
+      "destaque": [
+        "espaçamento",
+        "bordas."
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O que você ganha",
+        "direita": "pronto",
+        "itens": [
+          "Menu, barra e tabela alinhados",
+          "Relatório de cada item torto",
+          "Imagem com as guias desenhadas"
+        ],
+        "riscar": false,
+        "icone": "✅"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar no Claude.",
+      "destaque": [
+        "AGENTE"
+      ],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": [
+          "instalação",
+          "primeiro comando",
+          "alinhar sua tela"
+        ]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
