@@ -144,5 +144,12 @@
     "id": "22-claude-alinha-seu-site",
     "tema": "gridlines: o Claude passa uma régua no seu site e alinha tudo",
     "media_id": "18021193583978412"
+  },
+  {
+    "data": "2026-11-26",
+    "hora": "09:18",
+    "id": "23-claude-acelera-seu-app",
+    "tema": "fast-anything: o Claude acha a parte lenta do seu app e reescreve só ela em Rust",
+    "media_id": "18119907629042651"
   }
 ]

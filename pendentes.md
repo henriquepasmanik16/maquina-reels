@@ -20,3 +20,5 @@
 - BLOQUEIO CONTINUA (2026-11-25 manhã): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE não foram lidos nem respondidos; post 16 (VERIFICAR) segue sem confirmação.
 - PUBLICADO (2026-11-25 tarde, 15:51, media 18021193583978412): videos/22-claude-alinha-seu-site.mp4 (gridlines, github.com/pritamux/gridlines) — gerado e publicado na rotina
 - BLOQUEIO CONTINUA (2026-11-25 tarde): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE e seguidores não foram lidos; post 16 (VERIFICAR) segue sem confirmação.
+- PUBLICADO (2026-11-26 manhã, 09:18, media 18119907629042651): videos/23-claude-acelera-seu-app.mp4 (fast-anything, github.com/EL4CTEO/fast-anything) — gerado e publicado na rotina
+- BLOQUEIO CONTINUA (2026-11-26 manhã): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE não foram lidos nem respondidos; post 16 (VERIFICAR) segue sem confirmação.
