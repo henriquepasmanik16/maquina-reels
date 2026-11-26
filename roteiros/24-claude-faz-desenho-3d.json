@@ -1,0 +1,84 @@
+{
+  "id": "24-claude-faz-desenho-3d",
+  "titulo": "Claude Shorts Skills: o Claude vira um estúdio de desenho animado 3D no seu PC",
+  "fonte": "https://github.com/fahniazz/claude-shorts-skills",
+  "capa": {
+    "texto": "O Claude agora faz",
+    "destaque": "desenho animado 3D"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude agora transforma o seu PC num estúdio de desenho animado em 3D pra vídeo curto.",
+      "destaque": ["estúdio", "3D"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude Code",
+        "linhas": ["Use a skill de desenho 3D", "e faça um short sobre o farol"],
+        "hora": "agora",
+        "icone": "🎬"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Fazer animação pra Reels e Shorts sempre exigiu programa caro, horas de edição ou pagar um animador.",
+      "destaque": ["caro,", "animador."],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O jeito difícil",
+        "direita": "dor",
+        "itens": ["Programa de animação caro", "Horas de edição", "Pagar um animador"],
+        "riscar": true,
+        "icone": "😩"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude Shorts Skills é grátis e de código aberto. Você pede a história, e o Claude escreve o roteiro, planeja as cenas e anima tudo.",
+      "destaque": ["grátis", "anima"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O que ele faz",
+        "direita": "skill",
+        "selo": "✓ grátis",
+        "linhas": [["Escreve o roteiro"], ["Planeja câmera e cenas"], ["Anima e renderiza"]],
+        "icone": "🧸"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Não é vídeo gerado por IA: cada quadro é desenhado com código no seu computador. E ainda faz legenda sincronizada com a fala.",
+      "destaque": ["código", "legenda"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Feito no seu PC",
+        "direita": "pronto",
+        "itens": ["Cada quadro desenhado com código", "Legenda no ritmo da fala", "Formato vertical pronto"],
+        "riscar": false,
+        "icone": "✅"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar no Claude Code.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "primeiro pedido", "seu primeiro short"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
