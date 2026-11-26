@@ -23,3 +23,4 @@
 - PUBLICADO (2026-11-26 manhã, 09:18, media 18119907629042651): videos/23-claude-acelera-seu-app.mp4 (fast-anything, github.com/EL4CTEO/fast-anything) — gerado e publicado na rotina
 - BLOQUEIO CONTINUA (2026-11-26 manhã): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE não foram lidos nem respondidos; post 16 (VERIFICAR) segue sem confirmação.
 - PUBLICADO (2026-11-26 tarde, 15:52, media 18223355098350009): videos/24-claude-faz-desenho-3d.mp4 (Claude Shorts Skills, github.com/fahniazz/claude-shorts-skills) — gerado e publicado na rotina. Push direto na main foi recusado; entrou via PR #1 (merge).
+- BLOQUEIO CONTINUA (2026-11-26 tarde): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE e seguidores não foram lidos; post 16 (VERIFICAR) segue sem confirmação.
