@@ -1,0 +1,84 @@
+{
+  "id": "23-claude-acelera-seu-app",
+  "titulo": "fast-anything: o Claude acha a parte lenta do seu app e reescreve só ela em Rust",
+  "fonte": "https://github.com/EL4CTEO/fast-anything",
+  "capa": {
+    "texto": "O Claude agora acelera",
+    "destaque": "seu app lento"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Seu app tá lento? O Claude agora acha o trecho que trava e deixa ele rápido, sem você reescrever tudo.",
+      "destaque": ["lento?", "rápido,"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Terminal",
+        "linhas": ["fast-anything go --agent claude", "-- python app.py"],
+        "hora": "agora",
+        "icone": "⚡"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Reescrever um app inteiro numa linguagem mais rápida leva meses. E quase sempre a lentidão mora em poucas funções.",
+      "destaque": ["meses.", "poucas"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O jeito difícil",
+        "direita": "dor",
+        "itens": ["Reescrever o app inteiro", "Meses de trabalho", "Lentidão escondida em poucas funções"],
+        "riscar": true,
+        "icone": "🐢"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O fast-anything é grátis e de código aberto. Ele mede o seu app, acha as funções lentas, e o Claude reescreve só elas em Rust.",
+      "destaque": ["grátis", "Rust."],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O que ele faz",
+        "direita": "ferramenta",
+        "selo": "✓ grátis",
+        "linhas": [["Mede o seu app"], ["Acha as funções lentas"], ["Claude reescreve só elas"]],
+        "icone": "🔍"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Antes de trocar, ele repete chamadas reais e confere se o resultado é igual. Não gostou? Desliga com um comando.",
+      "destaque": ["igual.", "comando."],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Sem susto",
+        "direita": "pronto",
+        "itens": ["Testa com chamadas reais", "Só liga se o resultado bater", "Desliga com um comando"],
+        "riscar": false,
+        "icone": "✅"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra instalar no Claude Code.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": ["instalação", "primeiro comando", "acelerar seu app"]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
