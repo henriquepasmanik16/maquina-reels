@@ -1,0 +1,123 @@
+{
+  "id": "26-claude-acha-falhas",
+  "titulo": "safe-anything: o Claude acha as falhas de segurança do seu código antes de alguém explorar",
+  "fonte": "https://github.com/erkamyaman/safe-anything",
+  "capa": {
+    "texto": "O Claude agora acha as",
+    "destaque": "falhas do seu app"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude agora acha os buracos de segurança do seu app antes que alguém ache por você.",
+      "destaque": [
+        "buracos",
+        "antes"
+      ],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude Code",
+        "linhas": [
+          "safe-anything .",
+          "procurando falhas no projeto"
+        ],
+        "hora": "agora",
+        "icone": "🛡️"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Quando você cria app com IA, é fácil deixar passar uma chave vazando ou uma porta aberta no código.",
+      "destaque": [
+        "chave",
+        "aberta"
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O que passa batido",
+        "direita": "risco",
+        "itens": [
+          "Chave de API exposta",
+          "Injeção de SQL",
+          "Agente com permissão demais"
+        ],
+        "riscar": false,
+        "icone": "😬"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O safe-anything é grátis e vira um plugin do Claude Code. Um comando varre seu código, suas chaves e até a configuração do seu agente.",
+      "destaque": [
+        "grátis",
+        "plugin"
+      ],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O que ele confere",
+        "direita": "plugin",
+        "selo": "✓ grátis",
+        "linhas": [
+          [
+            "Seu código"
+          ],
+          [
+            "Suas chaves"
+          ],
+          [
+            "Seu agente e MCPs"
+          ]
+        ],
+        "icone": "🔍"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Cada falha vem com a linha, o motivo e a correção. E o Claude conserta as que você pedir.",
+      "destaque": [
+        "linha",
+        "conserta"
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Relatório",
+        "direita": "pronto",
+        "itens": [
+          "A linha do problema",
+          "O motivo",
+          "A correção"
+        ],
+        "riscar": false,
+        "icone": "🔧"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra fazer a primeira varredura.",
+      "destaque": [
+        "AGENTE"
+      ],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": [
+          "instalação",
+          "o comando",
+          "como corrigir"
+        ]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
