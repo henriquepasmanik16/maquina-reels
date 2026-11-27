@@ -1,0 +1,123 @@
+{
+  "id": "25-claude-desenha-sua-casa",
+  "titulo": "blueprint: o Claude transforma um rabisco de planta numa casa 3D que se monta sozinha",
+  "fonte": "https://github.com/Nyxera0x/blueprint",
+  "capa": {
+    "texto": "O Claude agora transforma rabisco em",
+    "destaque": "casa 3D"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude agora pega um rabisco de planta e transforma numa casa 3D que se monta sozinha.",
+      "destaque": [
+        "rabisco",
+        "3D"
+      ],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude Code",
+        "linhas": [
+          "/blueprint",
+          "aqui está o rabisco da minha casa"
+        ],
+        "hora": "agora",
+        "icone": "🏠"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Ver sua ideia de casa em 3D sempre pediu programa difícil e dias de modelagem.",
+      "destaque": [
+        "difícil",
+        "modelagem."
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "O jeito difícil",
+        "direita": "dor",
+        "itens": [
+          "Programa 3D difícil",
+          "Dias de modelagem",
+          "Contratar alguém"
+        ],
+        "riscar": true,
+        "icone": "😩"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O blueprint é uma skill grátis do Claude Code. Você manda um rabisco, uma planta ou fotos, e o Claude monta a casa no Blender.",
+      "destaque": [
+        "grátis",
+        "Blender."
+      ],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "O que você manda",
+        "direita": "skill",
+        "selo": "✓ grátis",
+        "linhas": [
+          [
+            "Rabisco à caneta"
+          ],
+          [
+            "Planta do folheto"
+          ],
+          [
+            "Fotos de referência"
+          ]
+        ],
+        "icone": "✏️"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Cada parede vira código. Ele compara com a referência, corrige as diferenças e grava a casa se montando em cima do desenho.",
+      "destaque": [
+        "corrige",
+        "grava"
+      ],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Feito pelo Claude",
+        "direita": "pronto",
+        "itens": [
+          "Cada peça vira código",
+          "Compara e corrige",
+          "Vídeo da casa se montando"
+        ],
+        "riscar": false,
+        "icone": "🧱"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra montar a sua primeira casa.",
+      "destaque": [
+        "AGENTE"
+      ],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": [
+          "instalação",
+          "o que mandar",
+          "sua primeira casa"
+        ]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
