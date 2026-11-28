@@ -1,0 +1,103 @@
+{
+  "id": "27-claude-explica-maquinas",
+  "titulo": "Inkworks: o Claude monta uma página 3D interativa que mostra como qualquer máquina funciona",
+  "fonte": "https://github.com/Moh4696/inkworks-skill",
+  "capa": {
+    "texto": "O Claude agora explica",
+    "destaque": "qualquer máquina em 3D"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude agora te mostra por dentro como um motor funciona, em 3D, e você controla cada peça.",
+      "destaque": ["dentro", "3D"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude Code",
+        "linhas": [
+          "página 3D de como um motor funciona",
+          "montando as peças"
+        ],
+        "hora": "agora",
+        "icone": "⚙️"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Explicar uma máquina com texto e foto parada é difícil. Quem lê não vê as peças se mexendo.",
+      "destaque": ["difícil", "mexendo"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Explicação comum",
+        "direita": "parada",
+        "itens": [
+          "Texto longo",
+          "Foto sem movimento",
+          "Ninguém entende a ordem"
+        ],
+        "riscar": false,
+        "icone": "😵"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Inkworks é uma skill grátis pro Claude Code. Você pede como funciona um motor, uma bomba ou uma fechadura, e ele monta a página.",
+      "destaque": ["grátis", "skill"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "Você pede",
+        "direita": "skill",
+        "selo": "✓ grátis",
+        "linhas": [
+          ["Um motor"],
+          ["Uma bomba"],
+          ["Uma fechadura"]
+        ],
+        "icone": "📐"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Sai um desenho técnico que se move. Dá pra pausar, avançar etapa por etapa e girar a câmera.",
+      "destaque": ["pausar", "girar"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Na página",
+        "direita": "pronto",
+        "itens": [
+          "Pausar",
+          "Etapa por etapa",
+          "Girar a câmera"
+        ],
+        "riscar": false,
+        "icone": "🔄"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra criar a sua primeira página.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": [
+          "instalação",
+          "o pedido",
+          "como abrir"
+        ]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
