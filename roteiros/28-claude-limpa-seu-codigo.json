@@ -1,0 +1,103 @@
+{
+  "id": "28-claude-limpa-seu-codigo",
+  "titulo": "shrink-anything: o Claude apaga o código morto do seu projeto e só mantém o corte se os testes passarem",
+  "fonte": "https://github.com/EL4CTEO/shrink-anything",
+  "capa": {
+    "texto": "O Claude agora faz faxina",
+    "destaque": "no seu código"
+  },
+  "cenas": [
+    {
+      "bloco": "Gancho",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O Claude agora apaga o código que ninguém usa no seu projeto, e o app continua funcionando.",
+      "destaque": ["apaga", "funcionando"],
+      "visual": {
+        "tipo": "editor",
+        "titulo": "Claude Code",
+        "linhas": [
+          "/shrink-anything:shrink npm test",
+          "procurando código morto"
+        ],
+        "hora": "agora",
+        "icone": "🧹"
+      }
+    },
+    {
+      "bloco": "Problema",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Todo projeto acumula função esquecida, arquivo solto e biblioteca que ninguém importa. E dá medo de apagar e quebrar tudo.",
+      "destaque": ["esquecida", "medo"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Seu projeto hoje",
+        "direita": "pesado",
+        "itens": [
+          "Funções esquecidas",
+          "Arquivos soltos",
+          "Bibliotecas sem uso"
+        ],
+        "riscar": false,
+        "icone": "😬"
+      }
+    },
+    {
+      "bloco": "Virada",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "O shrink-anything é grátis e funciona como plugin do Claude Code. Ele acha o que está morto, apaga e roda os seus próprios testes depois de cada corte.",
+      "destaque": ["grátis", "testes"],
+      "visual": {
+        "tipo": "tabela",
+        "titulo": "Ele apaga",
+        "direita": "plugin",
+        "selo": "✓ grátis",
+        "linhas": [
+          ["Código morto"],
+          ["Arquivos sem uso"],
+          ["Dependências sobrando"]
+        ],
+        "icone": "✂️"
+      }
+    },
+    {
+      "bloco": "Prova",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Se um teste quebra, ele devolve aquele pedaço. Seus testes nunca são mexidos, e um comando desfaz tudo.",
+      "destaque": ["devolve", "desfaz"],
+      "visual": {
+        "tipo": "checklist",
+        "titulo": "Segurança",
+        "direita": "ok",
+        "itens": [
+          "Quebrou, volta",
+          "Testes intactos",
+          "Undo de tudo"
+        ],
+        "riscar": false,
+        "icone": "🛡️"
+      }
+    },
+    {
+      "bloco": "CTA",
+      "inicio": 0,
+      "fim": 1,
+      "fala": "Comenta AGENTE que eu te mando o passo a passo pra fazer a primeira faxina.",
+      "destaque": ["AGENTE"],
+      "visual": {
+        "tipo": "comentario",
+        "palavra": "AGENTE",
+        "itens": [
+          "instalação",
+          "o comando",
+          "como desfazer"
+        ]
+      }
+    }
+  ],
+  "handle": "@henrique.agentes",
+  "cta_palavra": "AGENTE"
+}
