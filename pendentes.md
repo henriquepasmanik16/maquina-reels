@@ -28,3 +28,5 @@
 - BLOQUEIO CONTINUA (2026-11-27 manhã): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE não foram lidos nem respondidos; posts 16 e 25 (VERIFICAR) seguem sem confirmação.
 - PUBLICADO (2026-11-27 tarde, 15:52, media 18061621994573861): videos/26-claude-acha-falhas.mp4 (safe-anything, github.com/erkamyaman/safe-anything) — gerado e publicado na rotina
 - BLOQUEIO CONTINUA (2026-11-27 tarde): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE e seguidores não foram lidos; posts 16 e 25 (VERIFICAR) seguem sem confirmação.
+- PUBLICADO (2026-11-28 manhã, 09:24, media 18131926346493070): videos/27-claude-explica-maquinas.mp4 (Inkworks, github.com/Moh4696/inkworks-skill) — gerado e publicado na rotina
+- BLOQUEIO CONTINUA (2026-11-28 manhã): leituras do Windsor pausadas (plano Free, 2 contas do Instagram). Comentários AGENTE não foram lidos nem respondidos; posts 16 e 25 (VERIFICAR) seguem sem confirmação.
